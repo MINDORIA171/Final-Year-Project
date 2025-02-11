@@ -1,7 +1,9 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 import 'q01_model.dart';
@@ -50,7 +52,7 @@ class _Q01WidgetState extends State<Q01Widget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -70,7 +72,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                           size: 24.0,
                         ),
                       ),
-                  ].divide(const SizedBox(width: 100.0)),
+                  ].divide(SizedBox(width: 100.0)),
                 ),
               ),
               Text(
@@ -84,7 +86,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                     ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Text(
                   'With just few questions, we will help you \nfind the therapy which best fits your needs',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -94,13 +96,13 @@ class _Q01WidgetState extends State<Q01Widget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(30.0, 70.0, 30.0, 30.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 70.0, 30.0, 30.0),
                 child: Container(
                   width: 300.0,
                   height: 300.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).accent4,
-                    boxShadow: const [
+                    boxShadow: [
                       BoxShadow(
                         blurRadius: 10.0,
                         color: Color(0x33000000),
@@ -110,14 +112,14 @@ class _Q01WidgetState extends State<Q01Widget> {
                         ),
                       )
                     ],
-                    borderRadius: const BorderRadius.only(
+                    borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16.0),
                       bottomRight: Radius.circular(16.0),
                       topLeft: Radius.circular(16.0),
                       topRight: Radius.circular(16.0),
                     ),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -126,14 +128,14 @@ class _Q01WidgetState extends State<Q01Widget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: const AlignmentDirectional(-1.0, -0.7),
+                            alignment: AlignmentDirectional(-1.0, -0.7),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 0.0, 0.0),
                               child: Container(
                                 width: 40.0,
                                 height: 40.0,
-                                decoration: const BoxDecoration(
+                                decoration: BoxDecoration(
                                   color: Color(0xFF5B1607),
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(50.0),
@@ -143,9 +145,9 @@ class _Q01WidgetState extends State<Q01Widget> {
                                   ),
                                   shape: BoxShape.rectangle,
                                 ),
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: EdgeInsets.all(10.0),
                                   child: Text(
                                     '1',
                                     textAlign: TextAlign.center,
@@ -172,13 +174,13 @@ class _Q01WidgetState extends State<Q01Widget> {
                             ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   FFAppState().progressValue =
@@ -190,7 +192,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                                   context.pushNamed(
                                     'Q02',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: const TransitionInfo(
+                                      kTransitionInfoKey: TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                       ),
@@ -200,9 +202,9 @@ class _Q01WidgetState extends State<Q01Widget> {
                                 text: 'Yes',
                                 options: FFButtonOptions(
                                   height: 40.0,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).success,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -222,7 +224,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   FFAppState().progressValue =
@@ -235,7 +237,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                                   context.pushNamed(
                                     'Q02',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: const TransitionInfo(
+                                      kTransitionInfoKey: TransitionInfo(
                                         hasTransition: true,
                                         transitionType: PageTransitionType.fade,
                                       ),
@@ -245,9 +247,9 @@ class _Q01WidgetState extends State<Q01Widget> {
                                 text: 'No',
                                 options: FFButtonOptions(
                                   height: 40.0,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: FlutterFlowTheme.of(context).success,
                                   textStyle: FlutterFlowTheme.of(context)
@@ -269,14 +271,14 @@ class _Q01WidgetState extends State<Q01Widget> {
                           ],
                         ),
                       ),
-                    ].divide(const SizedBox(height: 30.0)),
+                    ].divide(SizedBox(height: 30.0)),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-1.0, 0.0),
+                alignment: AlignmentDirectional(-1.0, 0.0),
                 child: Padding(
-                  padding: const EdgeInsets.all(18.0),
+                  padding: EdgeInsets.all(18.0),
                   child: Text(
                     '01/15',
                     textAlign: TextAlign.start,
@@ -294,7 +296,7 @@ class _Q01WidgetState extends State<Q01Widget> {
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: LinearPercentIndicator(
                       percent: valueOrDefault<double>(
                         FFAppState().progressValue,

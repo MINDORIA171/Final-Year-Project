@@ -3,11 +3,15 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'dart:ui';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'onboard_model.dart';
 export 'onboard_model.dart';
 
@@ -46,8 +50,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(1.2, 1.2),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(1.2, 1.2),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -65,8 +69,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 60.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 60.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -84,8 +88,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 80.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 80.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -103,8 +107,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.4, 0.4),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.4, 0.4),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -122,8 +126,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(1.2, 1.2),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(1.2, 1.2),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -141,8 +145,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 60.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 60.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -160,8 +164,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 80.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 80.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -179,8 +183,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.5, 0.5),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.5, 0.5),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -198,8 +202,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(1.2, 1.2),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(1.2, 1.2),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -217,8 +221,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 60.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 60.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -236,8 +240,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 80.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 80.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -255,8 +259,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.5, 0.5),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.5, 0.5),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -274,8 +278,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(1.4, 1.4),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(1.4, 1.4),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -294,22 +298,22 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -327,8 +331,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 70.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 70.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -346,8 +350,8 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 90.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 90.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -365,15 +369,15 @@ class _OnboardWidgetState extends State<OnboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 100.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 100.0),
+            end: Offset(0.0, 0.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -400,7 +404,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
-          actions: const [],
+          actions: [],
           centerTitle: false,
         ),
         body: Column(
@@ -408,7 +412,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: SizedBox(
+              child: Container(
                 width: double.infinity,
                 height: 700.0,
                 child: Stack(
@@ -454,7 +458,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                   animationsMap['imageOnPageLoadAnimation1']!),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -470,7 +474,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation1']!),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Text(
                                       'Your journey to better mental health begins here. Discover a safe, supportive space to explore your emotions and grow.',
@@ -484,7 +488,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                         'textOnPageLoadAnimation2']!),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 24.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -505,7 +509,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                             await _model.pageViewController
                                                 ?.nextPage(
                                               duration:
-                                                  const Duration(milliseconds: 300),
+                                                  Duration(milliseconds: 300),
                                               curve: Curves.ease,
                                             );
                                           },
@@ -530,7 +534,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                             ).animateOnPageLoad(
                                 animationsMap['imageOnPageLoadAnimation2']!),
                             Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -546,7 +550,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation3']!),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Text(
                                       'Experience personalized, AI-powered therapy sessions designed to cater your to needs and help you feel heard.',
@@ -560,7 +564,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                         'textOnPageLoadAnimation4']!),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 24.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -581,7 +585,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                             await _model.pageViewController
                                                 ?.nextPage(
                                               duration:
-                                                  const Duration(milliseconds: 300),
+                                                  Duration(milliseconds: 300),
                                               curve: Curves.ease,
                                             );
                                           },
@@ -606,7 +610,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                             ).animateOnPageLoad(
                                 animationsMap['imageOnPageLoadAnimation3']!),
                             Padding(
-                              padding: const EdgeInsets.all(24.0),
+                              padding: EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -622,7 +626,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                   ).animateOnPageLoad(animationsMap[
                                       'textOnPageLoadAnimation5']!),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Text(
                                       'Stay in tune with your emotions using mood tracking and sentiment analysis. Gain deeper insights into your well-being.',
@@ -636,7 +640,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                         'textOnPageLoadAnimation6']!),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 24.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -657,7 +661,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                             await _model.pageViewController
                                                 ?.nextPage(
                                               duration:
-                                                  const Duration(milliseconds: 300),
+                                                  Duration(milliseconds: 300),
                                               curve: Curves.ease,
                                             );
                                           },
@@ -697,7 +701,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                   color: FlutterFlowTheme.of(context).accent4,
                                 ),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 100.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -705,10 +709,10 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            const AlignmentDirectional(0.0, -1.0),
+                                            AlignmentDirectional(0.0, -1.0),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 44.0),
                                           child: Container(
                                             width: 120.0,
@@ -726,7 +730,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: EdgeInsets.all(8.0),
                                               child: Container(
                                                 width: 140.0,
                                                 height: 140.0,
@@ -766,7 +770,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation7']!),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             24.0, 12.0, 24.0, 0.0),
                                         child: Text(
                                           'Join thousands of users on a path to emotional clarity and peace',
@@ -783,7 +787,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                             'textOnPageLoadAnimation8']!),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 24.0, 0.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () {
@@ -794,10 +798,10 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                             width: 300.0,
                                             height: 50.0,
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -810,7 +814,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                                                       letterSpacing: 0.0,
                                                     ),
                                             elevation: 2.0,
-                                            borderSide: const BorderSide(
+                                            borderSide: BorderSide(
                                               color: Colors.transparent,
                                               width: 1.0,
                                             ),
@@ -831,10 +835,10 @@ class _OnboardWidgetState extends State<OnboardWidget>
                       ],
                     ),
                     Align(
-                      alignment: const AlignmentDirectional(-0.85, 0.85),
+                      alignment: AlignmentDirectional(-0.85, 0.85),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                         child: smooth_page_indicator.SmoothPageIndicator(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
@@ -843,7 +847,7 @@ class _OnboardWidgetState extends State<OnboardWidget>
                           onDotClicked: (i) async {
                             await _model.pageViewController!.animateToPage(
                               i,
-                              duration: const Duration(milliseconds: 500),
+                              duration: Duration(milliseconds: 500),
                               curve: Curves.ease,
                             );
                             safeSetState(() {});

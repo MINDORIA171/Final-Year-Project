@@ -1,14 +1,20 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
+import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -76,245 +82,245 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const NavBarPage() : const HomePageWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const NavBarPage() : const HomePageWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : HomePageWidget(),
         ),
         FFRoute(
           name: 'login0',
           path: '/login_1',
-          builder: (context, params) => const Login0Widget(),
+          builder: (context, params) => Login0Widget(),
         ),
         FFRoute(
           name: 'Tsignup',
           path: '/tsignup',
-          builder: (context, params) => const TsignupWidget(),
+          builder: (context, params) => TsignupWidget(),
         ),
         FFRoute(
           name: 'Welcome',
           path: '/welcome',
-          builder: (context, params) => const WelcomeWidget(),
+          builder: (context, params) => WelcomeWidget(),
         ),
         FFRoute(
           name: 'DoctorDetails',
           path: '/doctorDetails',
-          builder: (context, params) => const DoctorDetailsWidget(),
+          builder: (context, params) => DoctorDetailsWidget(),
         ),
         FFRoute(
           name: 'Settings',
           path: '/settings',
-          builder: (context, params) => const SettingsWidget(),
+          builder: (context, params) => SettingsWidget(),
         ),
         FFRoute(
           name: 'dashboard',
           path: '/dashboard',
-          builder: (context, params) => const DashboardWidget(),
+          builder: (context, params) => DashboardWidget(),
         ),
         FFRoute(
           name: 'UserProfile',
           path: '/userProfile',
-          builder: (context, params) => const UserProfileWidget(),
+          builder: (context, params) => UserProfileWidget(),
         ),
         FFRoute(
           name: 'Q01',
           path: '/q01',
-          builder: (context, params) => const Q01Widget(),
+          builder: (context, params) => Q01Widget(),
         ),
         FFRoute(
           name: 'Q02',
           path: '/q02',
-          builder: (context, params) => const Q02Widget(),
+          builder: (context, params) => Q02Widget(),
         ),
         FFRoute(
           name: 'Q03',
           path: '/q03',
-          builder: (context, params) => const Q03Widget(),
+          builder: (context, params) => Q03Widget(),
         ),
         FFRoute(
           name: 'Q04',
           path: '/q04',
-          builder: (context, params) => const Q04Widget(),
+          builder: (context, params) => Q04Widget(),
         ),
         FFRoute(
           name: 'Q05',
           path: '/q05',
-          builder: (context, params) => const Q05Widget(),
+          builder: (context, params) => Q05Widget(),
         ),
         FFRoute(
           name: 'Q06',
           path: '/q06',
-          builder: (context, params) => const Q06Widget(),
+          builder: (context, params) => Q06Widget(),
         ),
         FFRoute(
           name: 'Q07',
           path: '/q07',
-          builder: (context, params) => const Q07Widget(),
+          builder: (context, params) => Q07Widget(),
         ),
         FFRoute(
           name: 'Q08',
           path: '/q08',
-          builder: (context, params) => const Q08Widget(),
+          builder: (context, params) => Q08Widget(),
         ),
         FFRoute(
           name: 'Q09',
           path: '/q09',
-          builder: (context, params) => const Q09Widget(),
+          builder: (context, params) => Q09Widget(),
         ),
         FFRoute(
           name: 'Q10',
           path: '/q10',
-          builder: (context, params) => const Q10Widget(),
+          builder: (context, params) => Q10Widget(),
         ),
         FFRoute(
           name: 'Q11',
           path: '/q11',
-          builder: (context, params) => const Q11Widget(),
+          builder: (context, params) => Q11Widget(),
         ),
         FFRoute(
           name: 'Q12',
           path: '/q12',
-          builder: (context, params) => const Q12Widget(),
+          builder: (context, params) => Q12Widget(),
         ),
         FFRoute(
           name: 'Q13',
           path: '/q13',
-          builder: (context, params) => const Q13Widget(),
+          builder: (context, params) => Q13Widget(),
         ),
         FFRoute(
           name: 'Q14',
           path: '/q14',
-          builder: (context, params) => const Q14Widget(),
+          builder: (context, params) => Q14Widget(),
         ),
         FFRoute(
           name: 'Q15',
           path: '/q15',
-          builder: (context, params) => const Q15Widget(),
+          builder: (context, params) => Q15Widget(),
         ),
         FFRoute(
           name: 'Tmainpage0',
           path: '/mainpage',
-          builder: (context, params) => const Tmainpage0Widget(),
+          builder: (context, params) => Tmainpage0Widget(),
         ),
         FFRoute(
           name: 'main',
           path: '/main',
-          builder: (context, params) => const MainWidget(),
+          builder: (context, params) => MainWidget(),
         ),
         FFRoute(
           name: 'BlogDetails',
           path: '/blogDetails',
-          builder: (context, params) => const BlogDetailsWidget(),
+          builder: (context, params) => BlogDetailsWidget(),
         ),
         FFRoute(
           name: 'LandingPage',
           path: '/landingPage',
-          builder: (context, params) => const LandingPageWidget(),
+          builder: (context, params) => LandingPageWidget(),
         ),
         FFRoute(
           name: 'TSignup0',
           path: '/Signup',
-          builder: (context, params) => const TSignup0Widget(),
+          builder: (context, params) => TSignup0Widget(),
         ),
         FFRoute(
           name: 'LoginPage',
           path: '/Login_02',
-          builder: (context, params) => const LoginPageWidget(),
+          builder: (context, params) => LoginPageWidget(),
         ),
         FFRoute(
           name: 'SignupPage',
           path: '/login_01',
-          builder: (context, params) => const SignupPageWidget(),
+          builder: (context, params) => SignupPageWidget(),
         ),
         FFRoute(
           name: 'blog',
           path: '/blog',
-          builder: (context, params) => const BlogWidget(),
+          builder: (context, params) => BlogWidget(),
         ),
         FFRoute(
           name: 'ONBOARD',
           path: '/onboard',
-          builder: (context, params) => const OnboardWidget(),
+          builder: (context, params) => OnboardWidget(),
         ),
         FFRoute(
           name: 'onboarding',
           path: '/onboarding',
-          builder: (context, params) => const OnboardingWidget(),
+          builder: (context, params) => OnboardingWidget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/HomePage',
-          builder: (context, params) => const HomePageWidget(),
+          builder: (context, params) => HomePageWidget(),
         ),
         FFRoute(
           name: 'Tmain',
           path: '/Tmain',
-          builder: (context, params) => const TmainWidget(),
+          builder: (context, params) => TmainWidget(),
         ),
         FFRoute(
           name: 'Mindoria',
           path: '/Mindoria',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Mindoria')
-              : const MindoriaWidget(),
+              ? NavBarPage(initialPage: 'Mindoria')
+              : MindoriaWidget(),
         ),
         FFRoute(
           name: 'ChatScreen',
           path: '/ChatScreen',
-          builder: (context, params) => const ChatScreenWidget(),
+          builder: (context, params) => ChatScreenWidget(),
         ),
         FFRoute(
           name: 'ChatbotPage',
           path: '/ChatbotPage',
-          builder: (context, params) => const ChatbotPageWidget(),
+          builder: (context, params) => ChatbotPageWidget(),
         ),
         FFRoute(
           name: 'VirtualTherapist',
           path: '/virtualTherapist',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'VirtualTherapist')
-              : const VirtualTherapistWidget(),
+              ? NavBarPage(initialPage: 'VirtualTherapist')
+              : VirtualTherapistWidget(),
         ),
         FFRoute(
           name: 'DoctorDetailsCopy',
           path: '/doctorDetailsCopy',
-          builder: (context, params) => const DoctorDetailsCopyWidget(),
+          builder: (context, params) => DoctorDetailsCopyWidget(),
         ),
         FFRoute(
           name: 'Progress',
           path: '/progress',
-          builder: (context, params) => const ProgressWidget(),
+          builder: (context, params) => ProgressWidget(),
         ),
         FFRoute(
           name: 'Meditation',
           path: '/meditation',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Meditation')
-              : const MeditationWidget(),
+              ? NavBarPage(initialPage: 'Meditation')
+              : MeditationWidget(),
         ),
         FFRoute(
           name: 'List13PropertyListview',
           path: '/list13PropertyListview',
-          builder: (context, params) => const List13PropertyListviewWidget(),
+          builder: (context, params) => List13PropertyListviewWidget(),
         ),
         FFRoute(
           name: 'details',
           path: '/details',
-          builder: (context, params) => const DetailsWidget(),
+          builder: (context, params) => DetailsWidget(),
         ),
         FFRoute(
           name: 'Home18Travel',
           path: '/home18Travel',
-          builder: (context, params) => const Home18TravelWidget(),
+          builder: (context, params) => Home18TravelWidget(),
         ),
         FFRoute(
           name: 'Blogs',
           path: '/blogs',
           builder: (context, params) =>
-              params.isEmpty ? const NavBarPage(initialPage: 'Blogs') : const BlogsWidget(),
+              params.isEmpty ? NavBarPage(initialPage: 'Blogs') : BlogsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -552,7 +558,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

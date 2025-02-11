@@ -1,8 +1,13 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:sticky_headers/sticky_headers.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'meditation_model.dart';
 export 'meditation_model.dart';
 
@@ -56,7 +61,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                   header: Container(
                     width: double.infinity,
                     height: 80.0,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [Colors.white, Color(0x9AFFFFFF)],
                         stops: [0.0, 1.0],
@@ -66,13 +71,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                     ),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 12.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         height: 60.0,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 3.0,
                               color: Color(0x33000000),
@@ -84,25 +89,25 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                           ],
                           borderRadius: BorderRadius.circular(12.0),
                           border: Border.all(
-                            color: const Color(0xFFE5E7EB),
+                            color: Color(0xFFE5E7EB),
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 8.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              const Icon(
+                              Icon(
                                 Icons.search_rounded,
                                 color: Color(0xFF606A85),
                                 size: 24.0,
                               ),
                               Expanded(
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 0.0, 0.0),
-                                  child: SizedBox(
+                                  child: Container(
                                     width: 200.0,
                                     child: TextFormField(
                                       controller: _model.textController,
@@ -115,7 +120,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Outfit',
-                                              color: const Color(0xFF606A85),
+                                              color: Color(0xFF606A85),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -124,7 +129,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Outfit',
-                                              color: const Color(0xFF606A85),
+                                              color: Color(0xFF606A85),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -140,12 +145,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Plus Jakarta Sans',
-                                            color: const Color(0xFF15161E),
+                                            color: Color(0xFF15161E),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
-                                      cursorColor: const Color(0xFF6F61EF),
+                                      cursorColor: Color(0xFF6F61EF),
                                       validator: _model.textControllerValidator
                                           .asValidator(context),
                                     ),
@@ -153,12 +158,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               FlutterFlowIconButton(
-                                borderColor: const Color(0xFFE5E7EB),
+                                borderColor: Color(0xFFE5E7EB),
                                 borderRadius: 10.0,
                                 borderWidth: 1.0,
                                 buttonSize: 40.0,
                                 fillColor: Colors.white,
-                                icon: const Icon(
+                                icon: Icon(
                                   Icons.tune_rounded,
                                   color: Color(0xFF15161E),
                                   size: 24.0,
@@ -179,13 +184,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                     children: [
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                         child: Text(
                           ' Exercises',
                           style:
                               FlutterFlowTheme.of(context).labelMedium.override(
                                     fontFamily: 'Outfit',
-                                    color: const Color(0xFF606A85),
+                                    color: Color(0xFF606A85),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -194,17 +199,17 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
                         child: Container(
                           width: double.infinity,
                           height: 270.0,
-                          decoration: const BoxDecoration(),
+                          decoration: BoxDecoration(),
                           child: ListView(
-                            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                            padding: EdgeInsets.symmetric(horizontal: 16.0),
                             scrollDirection: Axis.horizontal,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -213,12 +218,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -242,7 +247,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Sadness',
@@ -250,7 +255,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -259,7 +264,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -273,7 +278,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                               textScaler: MediaQuery.of(context)
                                                   .textScaler,
                                               text: TextSpan(
-                                                children: const [
+                                                children: [
                                                   TextSpan(
                                                     text: 'Explore',
                                                     style: TextStyle(
@@ -287,7 +292,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF606A85),
+                                                              Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -303,7 +308,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -312,12 +317,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -341,7 +346,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Depression',
@@ -349,7 +354,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -358,13 +363,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -377,7 +382,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -391,7 +396,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -400,12 +405,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -423,7 +428,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   height: double.infinity,
                                                   fit: BoxFit.fill,
                                                   alignment:
-                                                      const Alignment(0.0, -1.0),
+                                                      Alignment(0.0, -1.0),
                                                 ),
                                               ),
                                             ],
@@ -431,7 +436,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Trauma',
@@ -439,7 +444,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -448,13 +453,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -467,7 +472,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -481,7 +486,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -490,12 +495,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -519,7 +524,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Overwhelming',
@@ -527,7 +532,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -536,13 +541,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -555,7 +560,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -569,7 +574,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -578,12 +583,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -607,7 +612,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Anger',
@@ -615,7 +620,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -624,13 +629,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -643,7 +648,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -657,7 +662,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -666,12 +671,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -695,7 +700,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Fear',
@@ -703,7 +708,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -712,13 +717,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -731,7 +736,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -745,7 +750,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 12.0),
                                 child: Container(
                                   width: 220.0,
@@ -754,12 +759,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: const Color(0xFFE5E7EB),
+                                      color: Color(0xFFE5E7EB),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: EdgeInsets.all(8.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       crossAxisAlignment:
@@ -783,7 +788,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             'Anxiety and Stress',
@@ -791,7 +796,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                 .titleLarge
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: const Color(0xFF15161E),
+                                                  color: Color(0xFF15161E),
                                                   fontSize: 22.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -800,13 +805,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 8.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
                                             text: TextSpan(
-                                              children: const [
+                                              children: [
                                                 TextSpan(
                                                   text: 'Explore',
                                                   style: TextStyle(
@@ -819,7 +824,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -832,13 +837,13 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(const SizedBox(width: 16.0)),
+                            ].divide(SizedBox(width: 16.0)),
                           ),
                         ),
                       ),
                       Container(
                         width: double.infinity,
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           color: Color(0xFFF1F4F8),
                         ),
                         child: Column(
@@ -846,7 +851,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 0.0, 12.0),
                               child: Text(
                                 'Other Exercises',
@@ -854,7 +859,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     .labelMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: const Color(0xFF606A85),
+                                      color: Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -862,7 +867,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 44.0),
                               child: ListView(
                                 padding: EdgeInsets.zero,
@@ -871,14 +876,14 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 220.0,
                                       height: 240.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x33000000),
@@ -891,12 +896,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: EdgeInsets.all(8.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -920,7 +925,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Burnout',
@@ -930,7 +935,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -945,7 +950,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                       .spaceBetween,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 4.0, 0.0, 8.0),
                                                   child: RichText(
@@ -953,7 +958,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         MediaQuery.of(context)
                                                             .textScaler,
                                                     text: TextSpan(
-                                                      children: const [
+                                                      children: [
                                                         TextSpan(
                                                           text: 'Explore',
                                                           style: TextStyle(
@@ -968,7 +973,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -986,14 +991,14 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 220.0,
                                       height: 240.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x33000000),
@@ -1006,12 +1011,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: EdgeInsets.all(8.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1035,7 +1040,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Focusing',
@@ -1045,7 +1050,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1060,7 +1065,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                       .spaceBetween,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 4.0, 0.0, 8.0),
                                                   child: RichText(
@@ -1068,7 +1073,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         MediaQuery.of(context)
                                                             .textScaler,
                                                     text: TextSpan(
-                                                      children: const [
+                                                      children: [
                                                         TextSpan(
                                                           text: 'Explore',
                                                           style: TextStyle(
@@ -1083,7 +1088,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1101,14 +1106,14 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 220.0,
                                       height: 240.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x33000000),
@@ -1121,12 +1126,12 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: EdgeInsets.all(8.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1150,7 +1155,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Self-Reflection',
@@ -1160,7 +1165,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1175,7 +1180,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                       .spaceBetween,
                                               children: [
                                                 Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 4.0, 0.0, 8.0),
                                                   child: RichText(
@@ -1183,7 +1188,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                         MediaQuery.of(context)
                                                             .textScaler,
                                                     text: TextSpan(
-                                                      children: const [
+                                                      children: [
                                                         TextSpan(
                                                           text: 'Explore',
                                                           style: TextStyle(
@@ -1198,7 +1203,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1215,7 +1220,7 @@ class _MeditationWidgetState extends State<MeditationWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(const SizedBox(height: 12.0)),
+                                ].divide(SizedBox(height: 12.0)),
                               ),
                             ),
                           ],

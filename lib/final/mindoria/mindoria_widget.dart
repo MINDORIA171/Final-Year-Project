@@ -4,8 +4,12 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import 'dart:ui';
 import 'package:easy_debounce/easy_debounce.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'mindoria_model.dart';
 export 'mindoria_model.dart';
 
@@ -64,7 +68,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
             },
           ),
           title: Align(
-            alignment: const AlignmentDirectional(0.0, -1.0),
+            alignment: AlignmentDirectional(0.0, -1.0),
             child: Text(
               'Welcome Eman',
               style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -76,12 +80,12 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
           ),
           actions: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
               child: Container(
                 width: 50.0,
                 height: 50.0,
                 clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   shape: BoxShape.circle,
                 ),
                 child: Image.asset(
@@ -118,7 +122,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   15.0, 5.0, 0.0, 60.0),
                               child: Icon(
                                 Icons.search_rounded,
@@ -129,16 +133,16 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 5.0, 0.0, 60.0),
-                                child: SizedBox(
+                                child: Container(
                                   width: 200.0,
                                   child: TextFormField(
                                     controller: _model.textController,
                                     focusNode: _model.textFieldFocusNode,
                                     onChanged: (_) => EasyDebounce.debounce(
                                       '_model.textController',
-                                      const Duration(milliseconds: 2000),
+                                      Duration(milliseconds: 2000),
                                       () async {
                                         FFAppState().searchQuery =
                                             _model.textController.text;
@@ -163,7 +167,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
+                                        borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -171,7 +175,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                             BorderRadius.circular(0.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
+                                        borderSide: BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -220,10 +224,10 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                     ),
                   ),
                   Align(
-                    alignment: const AlignmentDirectional(-1.0, -1.0),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(18.0, 30.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(18.0, 30.0, 0.0, 0.0),
                       child: Text(
                         'How are you feeling today?',
                         style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -235,9 +239,9 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                     child: FlutterFlowChoiceChips(
-                      options: const [
+                      options: [
                         ChipData('😊'),
                         ChipData('😔'),
                         ChipData('😡'),
@@ -290,13 +294,13 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 160.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -306,7 +310,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                       child: Stack(
                         children: [
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'AI Powered Therapy',
@@ -319,7 +323,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 15.0, 60.0, 0.0, 0.0),
                             child: Text(
                               'Start you therapy journey with MINDORIA\n',
@@ -332,7 +336,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ),
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            alignment: AlignmentDirectional(1.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
@@ -340,12 +344,12 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                 width: 161.0,
                                 height: 200.0,
                                 fit: BoxFit.contain,
-                                alignment: const Alignment(1.0, 0.0),
+                                alignment: Alignment(1.0, 0.0),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 25.0, 97.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -354,9 +358,9 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                               text: 'Explore',
                               options: FFButtonOptions(
                                 height: 30.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
@@ -379,13 +383,13 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 320.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -398,9 +402,9 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(-1.0, -1.0),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 25.0, 0.0, 10.0),
                                   child: Text(
                                     'Additional Features',
@@ -416,24 +420,24 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ],
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsets.all(20.0),
+                              padding: EdgeInsets.all(20.0),
                               child: ListView(
-                                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                padding: EdgeInsets.symmetric(horizontal: 10.0),
                                 primary: false,
                                 shrinkWrap: true,
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Align(
-                                    alignment: const AlignmentDirectional(0.73, 0.72),
+                                    alignment: AlignmentDirectional(0.73, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -443,7 +447,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 -0.15, -0.84),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -491,7 +495,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -500,11 +504,11 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsets.all(8.0),
+                                                    EdgeInsets.all(8.0),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .info,
@@ -525,7 +529,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
                                               focusColor: Colors.transparent,
@@ -544,7 +548,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                                   height: 103.0,
                                                   fit: BoxFit.cover,
                                                   alignment:
-                                                      const Alignment(0.0, 0.0),
+                                                      Alignment(0.0, 0.0),
                                                 ),
                                               ),
                                             ),
@@ -554,14 +558,14 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -571,7 +575,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -618,7 +622,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -627,11 +631,11 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -654,7 +658,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
                                               focusColor: Colors.transparent,
@@ -673,7 +677,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                                   height: 107.0,
                                                   fit: BoxFit.cover,
                                                   alignment:
-                                                      const Alignment(0.0, 1.0),
+                                                      Alignment(0.0, 1.0),
                                                 ),
                                               ),
                                             ),
@@ -683,14 +687,14 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -700,7 +704,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Mood Tracking',
@@ -718,7 +722,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -727,11 +731,11 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -754,7 +758,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -763,7 +767,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 0.0),
+                                                alignment: Alignment(0.0, 0.0),
                                               ),
                                             ),
                                           ),
@@ -772,14 +776,14 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -789,7 +793,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Daily Reminders',
@@ -808,7 +812,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -817,11 +821,11 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -844,7 +848,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -853,7 +857,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 1.0),
+                                                alignment: Alignment(0.0, 1.0),
                                               ),
                                             ),
                                           ),
@@ -862,14 +866,14 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -879,7 +883,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Progress Reports',
@@ -897,7 +901,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -906,11 +910,11 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -933,7 +937,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -942,7 +946,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 0.0),
+                                                alignment: Alignment(0.0, 0.0),
                                               ),
                                             ),
                                           ),
@@ -950,7 +954,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(const SizedBox(width: 10.0)),
+                                ].divide(SizedBox(width: 10.0)),
                               ),
                             ),
                           ),
@@ -960,13 +964,13 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 160.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -976,7 +980,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                       child: Stack(
                         children: [
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'Free Therapy Session',
@@ -989,7 +993,7 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 15.0, 60.0, 0.0, 0.0),
                             child: Text(
                               'Connect with our onboarded therapist to get\nfree medical advice\n',
@@ -1002,9 +1006,9 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                             ),
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            alignment: AlignmentDirectional(1.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 5.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
@@ -1013,13 +1017,13 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                                   width: 90.0,
                                   height: 100.0,
                                   fit: BoxFit.contain,
-                                  alignment: const Alignment(1.0, 0.0),
+                                  alignment: Alignment(1.0, 0.0),
                                 ),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 25.0, 100.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -1028,9 +1032,9 @@ class _MindoriaWidgetState extends State<MindoriaWidget> {
                               text: 'Connect',
                               options: FFButtonOptions(
                                 height: 30.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,

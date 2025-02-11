@@ -2,8 +2,11 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'doctor_details_model.dart';
 export 'doctor_details_model.dart';
 
@@ -66,7 +69,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -76,7 +79,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -88,7 +91,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 8.0),
+                padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 8.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -97,7 +100,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 70.0, 12.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 70.0, 12.0, 12.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -111,7 +114,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 8.0),
                           child: Text(
                             'Iqra Siddiqui',
@@ -132,7 +135,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: RatingBar.builder(
                             onRatingUpdate: (newValue) => safeSetState(
@@ -151,7 +154,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 12.0),
                           child: Container(
                             width: double.infinity,
@@ -175,7 +178,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: Icon(
                                           Icons.chat_bubble_rounded,
@@ -185,7 +188,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 12.0, 0.0),
                                         child: Text(
                                           'Chat',
@@ -219,7 +222,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: Icon(
                                           Icons.call_rounded,
@@ -229,7 +232,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 12.0, 0.0),
                                         child: Text(
                                           'Call',
@@ -252,7 +255,7 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: FFButtonWidget(
                             onPressed: () {
@@ -267,9 +270,9 @@ class _DoctorDetailsWidgetState extends State<DoctorDetailsWidget> {
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 48.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,

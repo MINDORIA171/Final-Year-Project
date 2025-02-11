@@ -1,6 +1,10 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'chat_screen_model.dart';
 export 'chat_screen_model.dart';
 
@@ -46,7 +50,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primaryText,
           automaticallyImplyLeading: true,
           leading: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: InkWell(
               splashColor: Colors.transparent,
               focusColor: Colors.transparent,
@@ -72,7 +76,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
           ),
           actions: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.menu,
                 color: FlutterFlowTheme.of(context).primaryBackground,
@@ -96,7 +100,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                     Container(
                       width: double.infinity,
                       height: 878.0,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
                             Color(0xFF000204),
@@ -114,23 +118,23 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              const Color(0x00FFFFFF),
+                              Color(0x00FFFFFF),
                               FlutterFlowTheme.of(context).primaryText
                             ],
-                            stops: const [0.0, 1.0],
-                            begin: const AlignmentDirectional(0.0, -1.0),
-                            end: const AlignmentDirectional(0, 1.0),
+                            stops: [0.0, 1.0],
+                            begin: AlignmentDirectional(0.0, -1.0),
+                            end: AlignmentDirectional(0, 1.0),
                           ),
                         ),
                         child: Align(
-                          alignment: const AlignmentDirectional(0.0, -1.0),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(16.0),
+                                padding: EdgeInsets.all(16.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
                                   primary: false,
@@ -141,12 +145,12 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
-                                          padding: const EdgeInsets.all(8.0),
+                                          padding: EdgeInsets.all(8.0),
                                           child: Container(
                                             width: 36.0,
                                             height: 36.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.asset(
@@ -156,7 +160,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Container(
                                             width: 300.0,
                                             height: 30.0,
@@ -168,17 +172,17 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .secondary
                                                 ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
+                                                stops: [0.0, 1.0],
+                                                begin: AlignmentDirectional(
                                                     0.0, -1.0),
-                                                end: const AlignmentDirectional(
+                                                end: AlignmentDirectional(
                                                     0, 1.0),
                                               ),
                                               borderRadius:
                                                   BorderRadius.circular(16.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'I\'m Mindoria your personal AI Therapist! ',
@@ -205,7 +209,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                       mainAxisAlignment: MainAxisAlignment.end,
                                       children: [
                                         Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Container(
                                             width: 300.0,
                                             height: 30.0,
@@ -217,17 +221,17 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .secondary
                                                 ],
-                                                stops: const [0.0, 1.0],
-                                                begin: const AlignmentDirectional(
+                                                stops: [0.0, 1.0],
+                                                begin: AlignmentDirectional(
                                                     0.0, -1.0),
-                                                end: const AlignmentDirectional(
+                                                end: AlignmentDirectional(
                                                     0, 1.0),
                                               ),
                                               borderRadius:
                                                   BorderRadius.circular(16.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Hello my name is Eman. I need your help.',
@@ -247,12 +251,12 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsets.all(8.0),
+                                          padding: EdgeInsets.all(8.0),
                                           child: Container(
                                             width: 36.0,
                                             height: 36.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.asset(
@@ -263,13 +267,13 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                         ),
                                       ],
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(-1.0, 1.0),
+                                alignment: AlignmentDirectional(-1.0, 1.0),
                                 child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(8.0),
                                   child: Container(
                                     width: 390.0,
                                     height: 65.0,
@@ -287,8 +291,8 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                           children: [
                                             Expanded(
                                               child: Padding(
-                                                padding: const EdgeInsets.all(8.0),
-                                                child: SizedBox(
+                                                padding: EdgeInsets.all(8.0),
+                                                child: Container(
                                                   width: 40.0,
                                                   child: TextFormField(
                                                     controller:
@@ -323,7 +327,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                                               ),
                                                       enabledBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -334,7 +338,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
-                                                        borderSide: const BorderSide(
+                                                        borderSide: BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -394,7 +398,7 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding: EdgeInsets.all(8.0),
                                               child: Container(
                                                 width: 44.0,
                                                 height: 44.0,
@@ -408,11 +412,11 @@ class _ChatScreenWidgetState extends State<ChatScreenWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsets.all(4.0),
+                                                        EdgeInsets.all(4.0),
                                                     child: Icon(
                                                       Icons.keyboard_voice,
                                                       color:

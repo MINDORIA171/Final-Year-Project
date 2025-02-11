@@ -1,7 +1,10 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'welcome_model.dart';
 export 'welcome_model.dart';
 
@@ -54,14 +57,14 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                       FlutterFlowTheme.of(context).primaryText,
                       FlutterFlowTheme.of(context).tertiary
                     ],
-                    stops: const [0.0, 1.0],
-                    begin: const AlignmentDirectional(0.0, -1.0),
-                    end: const AlignmentDirectional(0, 1.0),
+                    stops: [0.0, 1.0],
+                    begin: AlignmentDirectional(0.0, -1.0),
+                    end: AlignmentDirectional(0, 1.0),
                   ),
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+                      EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -93,7 +96,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                 width: MediaQuery.sizeOf(context).width * 1.0,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(32.0),
@@ -102,7 +105,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                 ),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(32.0, 24.0, 32.0, 24.0),
+                      EdgeInsetsDirectional.fromSTEB(32.0, 24.0, 32.0, 24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -129,7 +132,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 20.0, 20.0, 20.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -183,7 +186,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                                 FFButtonWidget(
                                   onPressed: () {
@@ -194,9 +197,9 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 1.0,
                                     height: 45.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).primary,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -211,7 +214,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     borderRadius: BorderRadius.circular(22.0),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
@@ -230,7 +233,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 20.0, 20.0, 20.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -284,7 +287,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                                 FFButtonWidget(
                                   onPressed: () {
@@ -295,9 +298,9 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 1.0,
                                     height: 45.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).secondary,
@@ -313,7 +316,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     borderRadius: BorderRadius.circular(22.0),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
@@ -332,7 +335,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 20.0, 20.0, 20.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -386,7 +389,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                                 FFButtonWidget(
                                   onPressed: () {
@@ -397,9 +400,9 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 1.0,
                                     height: 45.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color:
                                         FlutterFlowTheme.of(context).tertiary,
@@ -415,7 +418,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     borderRadius: BorderRadius.circular(22.0),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
@@ -434,7 +437,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 20.0, 20.0, 20.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -446,11 +449,11 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                       width: 60.0,
                                       height: 60.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0xFFE3F2FD),
+                                        color: Color(0xFFE3F2FD),
                                         borderRadius:
                                             BorderRadius.circular(30.0),
                                       ),
-                                      child: const Icon(
+                                      child: Icon(
                                         Icons.self_improvement,
                                         color: Color(0xFF1565C0),
                                         size: 30.0,
@@ -486,7 +489,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                                 FFButtonWidget(
                                   onPressed: () {
@@ -497,11 +500,11 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     width:
                                         MediaQuery.sizeOf(context).width * 1.0,
                                     height: 45.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xFF1565C0),
+                                    color: Color(0xFF1565C0),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -514,12 +517,12 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     borderRadius: BorderRadius.circular(22.0),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(height: 24.0)),
+                    ].divide(SizedBox(height: 24.0)),
                   ),
                 ),
               ),

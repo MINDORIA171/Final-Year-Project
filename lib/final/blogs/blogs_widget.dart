@@ -1,6 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'blogs_model.dart';
 export 'blogs_model.dart';
 
@@ -38,7 +43,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF1F5F8),
+        backgroundColor: Color(0xFFF1F5F8),
         body: SafeArea(
           top: true,
           child: ListView(
@@ -51,7 +56,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                 children: [
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -69,13 +74,13 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
                     child: Text(
                       'Articles and Blogs',
                       style:
                           FlutterFlowTheme.of(context).headlineMedium.override(
                                 fontFamily: 'Outfit',
-                                color: const Color(0xFF0F1113),
+                                color: Color(0xFF0F1113),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
@@ -91,12 +96,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                 children: [
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -109,7 +114,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -133,13 +138,13 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: const AlignmentDirectional(0.0, 0.0),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -163,7 +168,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                   .override(
                                                     fontFamily:
                                                         'Plus Jakarta Sans',
-                                                    color: const Color(0xFF0F1113),
+                                                    color: Color(0xFF0F1113),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -191,12 +196,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -209,7 +214,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -233,7 +238,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -282,12 +287,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -300,7 +305,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -324,7 +329,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -373,12 +378,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -391,7 +396,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -415,7 +420,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -464,12 +469,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -482,7 +487,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -506,7 +511,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -554,12 +559,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -572,7 +577,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -596,7 +601,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -645,12 +650,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 7.0,
                             color: Color(0x2F1D2429),
@@ -663,7 +668,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -687,7 +692,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,

@@ -4,7 +4,10 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'tmain_model.dart';
 export 'tmain_model.dart';
 
@@ -63,7 +66,7 @@ class _TmainWidgetState extends State<TmainWidget> {
             },
           ),
           title: Align(
-            alignment: const AlignmentDirectional(0.0, -1.0),
+            alignment: AlignmentDirectional(0.0, -1.0),
             child: Text(
               'Welcome Eman',
               style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -75,12 +78,12 @@ class _TmainWidgetState extends State<TmainWidget> {
           ),
           actions: [
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
               child: Container(
                 width: 50.0,
                 height: 50.0,
                 clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   shape: BoxShape.circle,
                 ),
                 child: Image.asset(
@@ -117,7 +120,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   15.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.search_rounded,
@@ -127,7 +130,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                               ),
                             ),
                             Expanded(
-                              child: SizedBox(
+                              child: Container(
                                 width: 200.0,
                                 child: TextFormField(
                                   controller: _model.textController,
@@ -150,14 +153,14 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(0.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
+                                      borderSide: BorderSide(
                                         color: Color(0x00000000),
                                         width: 1.0,
                                       ),
@@ -202,10 +205,10 @@ class _TmainWidgetState extends State<TmainWidget> {
                     ),
                   ),
                   Align(
-                    alignment: const AlignmentDirectional(-1.0, -1.0),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(18.0, 30.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(18.0, 30.0, 0.0, 0.0),
                       child: Text(
                         'How are you feeling today?',
                         style: FlutterFlowTheme.of(context).titleSmall.override(
@@ -217,9 +220,9 @@ class _TmainWidgetState extends State<TmainWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                     child: FlutterFlowChoiceChips(
-                      options: const [
+                      options: [
                         ChipData('😊'),
                         ChipData('😔'),
                         ChipData('😡'),
@@ -270,13 +273,13 @@ class _TmainWidgetState extends State<TmainWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 160.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -286,7 +289,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                       child: Stack(
                         children: [
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'AI Powered Therapy',
@@ -299,7 +302,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 15.0, 60.0, 0.0, 0.0),
                             child: Text(
                               'Start you therapy journey with MINDORIA\n',
@@ -312,7 +315,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                             ),
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            alignment: AlignmentDirectional(1.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
@@ -320,12 +323,12 @@ class _TmainWidgetState extends State<TmainWidget> {
                                 width: 161.0,
                                 height: 200.0,
                                 fit: BoxFit.contain,
-                                alignment: const Alignment(1.0, 0.0),
+                                alignment: Alignment(1.0, 0.0),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 25.0, 97.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () {
@@ -334,9 +337,9 @@ class _TmainWidgetState extends State<TmainWidget> {
                               text: 'Explore',
                               options: FFButtonOptions(
                                 height: 30.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
@@ -359,13 +362,13 @@ class _TmainWidgetState extends State<TmainWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 320.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent4,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -378,9 +381,9 @@ class _TmainWidgetState extends State<TmainWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(-1.0, -1.0),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 25.0, 0.0, 10.0),
                                   child: Text(
                                     'Additional Features',
@@ -396,24 +399,24 @@ class _TmainWidgetState extends State<TmainWidget> {
                             ],
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsets.all(20.0),
+                              padding: EdgeInsets.all(20.0),
                               child: ListView(
-                                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                padding: EdgeInsets.symmetric(horizontal: 10.0),
                                 primary: false,
                                 shrinkWrap: true,
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Align(
-                                    alignment: const AlignmentDirectional(0.73, 0.72),
+                                    alignment: AlignmentDirectional(0.73, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -423,7 +426,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 -0.15, -0.84),
                                             child: Text(
                                               '',
@@ -442,7 +445,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -451,11 +454,11 @@ class _TmainWidgetState extends State<TmainWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsets.all(8.0),
+                                                    EdgeInsets.all(8.0),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .info,
@@ -476,7 +479,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -485,7 +488,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 0.0),
+                                                alignment: Alignment(0.0, 0.0),
                                               ),
                                             ),
                                           ),
@@ -494,14 +497,14 @@ class _TmainWidgetState extends State<TmainWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -511,7 +514,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               '',
@@ -529,7 +532,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -538,11 +541,11 @@ class _TmainWidgetState extends State<TmainWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -565,7 +568,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -574,7 +577,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 1.0),
+                                                alignment: Alignment(0.0, 1.0),
                                               ),
                                             ),
                                           ),
@@ -583,14 +586,14 @@ class _TmainWidgetState extends State<TmainWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -600,7 +603,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Guided Meditation',
@@ -618,7 +621,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -627,11 +630,11 @@ class _TmainWidgetState extends State<TmainWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -654,7 +657,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -663,7 +666,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 0.0),
+                                                alignment: Alignment(0.0, 0.0),
                                               ),
                                             ),
                                           ),
@@ -672,14 +675,14 @@ class _TmainWidgetState extends State<TmainWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -689,7 +692,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Daily Reminders',
@@ -708,7 +711,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -717,11 +720,11 @@ class _TmainWidgetState extends State<TmainWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -744,7 +747,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -753,7 +756,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 1.0),
+                                                alignment: Alignment(0.0, 1.0),
                                               ),
                                             ),
                                           ),
@@ -762,14 +765,14 @@ class _TmainWidgetState extends State<TmainWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: const AlignmentDirectional(0.76, 0.72),
+                                    alignment: AlignmentDirectional(0.76, 0.72),
                                     child: Container(
                                       width: 165.0,
                                       height: 210.0,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        borderRadius: const BorderRadius.only(
+                                        borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(16.0),
                                           bottomRight: Radius.circular(16.0),
                                           topLeft: Radius.circular(16.0),
@@ -779,7 +782,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: const AlignmentDirectional(
+                                            alignment: AlignmentDirectional(
                                                 0.04, -0.84),
                                             child: Text(
                                               'Progress Reports',
@@ -797,7 +800,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -806,11 +809,11 @@ class _TmainWidgetState extends State<TmainWidget> {
                                               options: FFButtonOptions(
                                                 width: 126.0,
                                                 height: 103.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -833,7 +836,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.44),
+                                                AlignmentDirectional(0.0, 0.44),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -842,7 +845,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                                 width: 126.0,
                                                 height: 103.0,
                                                 fit: BoxFit.cover,
-                                                alignment: const Alignment(0.0, 0.0),
+                                                alignment: Alignment(0.0, 0.0),
                                               ),
                                             ),
                                           ),
@@ -850,7 +853,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                                       ),
                                     ),
                                   ),
-                                ].divide(const SizedBox(width: 10.0)),
+                                ].divide(SizedBox(width: 10.0)),
                               ),
                             ),
                           ),
@@ -860,13 +863,13 @@ class _TmainWidgetState extends State<TmainWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Container(
                       width: 370.0,
                       height: 160.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).accent2,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(24.0),
                           bottomRight: Radius.circular(24.0),
                           topLeft: Radius.circular(24.0),
@@ -876,7 +879,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                       child: Stack(
                         children: [
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 25.0, 0.0, 0.0),
                             child: Text(
                               'Free Therapy Session',
@@ -889,7 +892,7 @@ class _TmainWidgetState extends State<TmainWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 15.0, 60.0, 0.0, 0.0),
                             child: Text(
                               'Connect with our onboarded therapist to get\nfree medical advice\n',
@@ -902,9 +905,9 @@ class _TmainWidgetState extends State<TmainWidget> {
                             ),
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            alignment: AlignmentDirectional(1.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 5.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8.0),
@@ -913,13 +916,13 @@ class _TmainWidgetState extends State<TmainWidget> {
                                   width: 90.0,
                                   height: 100.0,
                                   fit: BoxFit.contain,
-                                  alignment: const Alignment(1.0, 0.0),
+                                  alignment: Alignment(1.0, 0.0),
                                 ),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 25.0, 97.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () {
@@ -928,9 +931,9 @@ class _TmainWidgetState extends State<TmainWidget> {
                               text: 'Connect',
                               options: FFButtonOptions(
                                 height: 30.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,

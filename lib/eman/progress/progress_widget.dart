@@ -3,9 +3,16 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
+import 'dart:ui';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:provider/provider.dart';
 import 'progress_model.dart';
 export 'progress_model.dart';
 
@@ -50,22 +57,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -84,22 +91,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -118,15 +125,15 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -145,22 +152,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -179,22 +186,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -213,22 +220,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -247,22 +254,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0, 1.396),
-            end: const Offset(0, 0),
+            begin: Offset(0, 1.396),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -281,15 +288,15 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 150.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 150.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -308,22 +315,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.873, 0),
-            end: const Offset(0, 0),
+            begin: Offset(0.873, 0),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -342,22 +349,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.873, 0),
-            end: const Offset(0, 0),
+            begin: Offset(0.873, 0),
+            end: Offset(0, 0),
           ),
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -380,16 +387,16 @@ class _ProgressWidgetState extends State<ProgressWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF1F4F8),
+        backgroundColor: Color(0xFFF1F4F8),
         appBar: AppBar(
-          backgroundColor: const Color(0xFFF1F4F8),
+          backgroundColor: Color(0xFFF1F4F8),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_rounded,
               color: Color(0xFF15161E),
               size: 30.0,
@@ -402,13 +409,13 @@ class _ProgressWidgetState extends State<ProgressWidget>
             'Progress',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
-                  color: const Color(0xFF15161E),
+                  color: Color(0xFF15161E),
                   fontSize: 24.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w500,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -421,7 +428,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                 child: Column(
                   children: [
                     Align(
-                      alignment: const Alignment(0.0, 0),
+                      alignment: Alignment(0.0, 0),
                       child: FlutterFlowButtonTabBar(
                         useToggleButtonStyle: true,
                         labelStyle:
@@ -440,22 +447,22 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
-                        labelColor: const Color(0xFF15161E),
-                        unselectedLabelColor: const Color(0xFF606A85),
+                        labelColor: Color(0xFF15161E),
+                        unselectedLabelColor: Color(0xFF606A85),
                         backgroundColor: Colors.white,
-                        unselectedBackgroundColor: const Color(0xFFF1F4F8),
-                        borderColor: const Color(0xFFE5E7EB),
-                        unselectedBorderColor: const Color(0xFFE5E7EB),
+                        unselectedBackgroundColor: Color(0xFFF1F4F8),
+                        borderColor: Color(0xFFE5E7EB),
+                        unselectedBorderColor: Color(0xFFE5E7EB),
                         borderWidth: 2.0,
                         borderRadius: 8.0,
                         elevation: 0.0,
-                        labelPadding: const EdgeInsetsDirectional.fromSTEB(
+                        labelPadding: EdgeInsetsDirectional.fromSTEB(
                             32.0, 0.0, 32.0, 0.0),
                         buttonMargin:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
-                        tabs: const [
+                        tabs: [
                           Tab(
                             text: 'Daily',
                           ),
@@ -478,7 +485,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -489,7 +496,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         height: 170.0,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          boxShadow: const [
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -502,12 +509,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE5E7EB),
+                                            color: Color(0xFFE5E7EB),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -523,7 +530,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF606A85),
+                                                              Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -533,7 +540,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                               Expanded(
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: RichText(
                                                     textScaler:
@@ -549,7 +556,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 44.0,
                                                                 letterSpacing:
@@ -559,7 +566,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                         .normal,
                                                               ),
                                                         ),
-                                                        const TextSpan(
+                                                        TextSpan(
                                                           text: ' Kcl',
                                                           style: TextStyle(),
                                                         )
@@ -570,7 +577,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -581,7 +588,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 thickness: 1.0,
                                                 color: Color(0xFFE5E7EB),
                                               ),
@@ -599,14 +606,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Figtree',
                                                           color:
-                                                              const Color(0xFF6F61EF),
+                                                              Color(0xFF6F61EF),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.chevron_right_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -625,7 +632,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         height: 170.0,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          boxShadow: const [
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -638,12 +645,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE5E7EB),
+                                            color: Color(0xFFE5E7EB),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -659,7 +666,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF606A85),
+                                                              Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -669,7 +676,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                               Expanded(
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: RichText(
                                                     textScaler:
@@ -685,7 +692,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 44.0,
                                                                 letterSpacing:
@@ -695,7 +702,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                         .normal,
                                                               ),
                                                         ),
-                                                        const TextSpan(
+                                                        TextSpan(
                                                           text: ' Kg',
                                                           style: TextStyle(),
                                                         )
@@ -706,7 +713,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -717,7 +724,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 thickness: 1.0,
                                                 color: Color(0xFFE5E7EB),
                                               ),
@@ -735,14 +742,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Figtree',
                                                           color:
-                                                              const Color(0xFF6F61EF),
+                                                              Color(0xFF6F61EF),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.chevron_right_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -755,11 +762,11 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'containerOnPageLoadAnimation2']!),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Text(
                                   'Your Workouts',
@@ -767,7 +774,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF606A85),
+                                        color: Color(0xFF606A85),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -776,7 +783,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                     animationsMap['textOnPageLoadAnimation1']!),
                               ),
                               ListView(
-                                padding: const EdgeInsets.fromLTRB(
+                                padding: EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -786,14 +793,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 100.0,
                                       height: 150.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -806,7 +813,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
@@ -814,7 +821,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
@@ -830,12 +837,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                             width: double.infinity,
                                             height: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: const Color(0x9AFFFFFF),
+                                              color: Color(0x9AFFFFFF),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -851,7 +858,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -863,7 +870,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         MediaQuery.of(context)
                                                             .textScaler,
                                                     text: TextSpan(
-                                                      children: const [
+                                                      children: [
                                                         TextSpan(
                                                           text: '8 Mins',
                                                           style: TextStyle(),
@@ -883,7 +890,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -892,7 +899,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(height: 4.0)),
+                                                ].divide(SizedBox(height: 4.0)),
                                               ),
                                             ),
                                           ),
@@ -902,14 +909,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         'containerOnPageLoadAnimation3']!),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 100.0,
                                       height: 150.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -922,7 +929,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
@@ -930,7 +937,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
@@ -946,12 +953,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                             width: double.infinity,
                                             height: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: const Color(0x9AFFFFFF),
+                                              color: Color(0x9AFFFFFF),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(12.0),
+                                              padding: EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 mainAxisAlignment:
@@ -967,7 +974,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 22.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -979,7 +986,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         MediaQuery.of(context)
                                                             .textScaler,
                                                     text: TextSpan(
-                                                      children: const [
+                                                      children: [
                                                         TextSpan(
                                                           text: '12 Mins',
                                                           style: TextStyle(),
@@ -999,7 +1006,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1008,7 +1015,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(height: 4.0)),
+                                                ].divide(SizedBox(height: 4.0)),
                                               ),
                                             ),
                                           ),
@@ -1017,7 +1024,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                     ).animateOnPageLoad(animationsMap[
                                         'containerOnPageLoadAnimation4']!),
                                   ),
-                                ].divide(const SizedBox(height: 12.0)),
+                                ].divide(SizedBox(height: 12.0)),
                               ),
                             ],
                           ),
@@ -1026,7 +1033,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -1037,7 +1044,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         height: 170.0,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          boxShadow: const [
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -1050,12 +1057,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE5E7EB),
+                                            color: Color(0xFFE5E7EB),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -1071,7 +1078,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF606A85),
+                                                              Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1081,7 +1088,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                               Expanded(
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: RichText(
                                                     textScaler:
@@ -1097,7 +1104,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 44.0,
                                                                 letterSpacing:
@@ -1107,7 +1114,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                         .normal,
                                                               ),
                                                         ),
-                                                        const TextSpan(
+                                                        TextSpan(
                                                           text: ' Kcl',
                                                           style: TextStyle(),
                                                         )
@@ -1118,7 +1125,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1129,7 +1136,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 thickness: 1.0,
                                                 color: Color(0xFFE5E7EB),
                                               ),
@@ -1147,14 +1154,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Figtree',
                                                           color:
-                                                              const Color(0xFF6F61EF),
+                                                              Color(0xFF6F61EF),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.chevron_right_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -1173,7 +1180,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         height: 170.0,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
-                                          boxShadow: const [
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -1186,12 +1193,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE5E7EB),
+                                            color: Color(0xFFE5E7EB),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -1207,7 +1214,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF606A85),
+                                                              Color(0xFF606A85),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1217,7 +1224,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                               Expanded(
                                                 child: Align(
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           -1.0, 0.0),
                                                   child: RichText(
                                                     textScaler:
@@ -1233,7 +1240,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 44.0,
                                                                 letterSpacing:
@@ -1243,7 +1250,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                         .normal,
                                                               ),
                                                         ),
-                                                        const TextSpan(
+                                                        TextSpan(
                                                           text: ' /7',
                                                           style: TextStyle(),
                                                         )
@@ -1254,7 +1261,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1265,7 +1272,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 thickness: 1.0,
                                                 color: Color(0xFFE5E7EB),
                                               ),
@@ -1283,14 +1290,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         .override(
                                                           fontFamily: 'Figtree',
                                                           color:
-                                                              const Color(0xFF6F61EF),
+                                                              Color(0xFF6F61EF),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.chevron_right_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -1303,11 +1310,11 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'containerOnPageLoadAnimation6']!),
                                     ),
-                                  ].divide(const SizedBox(width: 16.0)),
+                                  ].divide(SizedBox(width: 16.0)),
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 0.0, 8.0),
                                 child: Text(
                                   'Top Workouts',
@@ -1315,7 +1322,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF606A85),
+                                        color: Color(0xFF606A85),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -1324,7 +1331,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                     animationsMap['textOnPageLoadAnimation2']!),
                               ),
                               ListView(
-                                padding: const EdgeInsets.fromLTRB(
+                                padding: EdgeInsets.fromLTRB(
                                   0,
                                   0,
                                   0,
@@ -1334,14 +1341,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                 scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 100.0,
                                       height: 120.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -1354,12 +1361,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1374,7 +1381,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -1391,7 +1398,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             -1.0, 1.0),
                                                     child: RichText(
                                                       textScaler:
@@ -1407,7 +1414,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFF15161E),
                                                                   fontSize:
                                                                       44.0,
@@ -1418,7 +1425,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                           .normal,
                                                                 ),
                                                           ),
-                                                          const TextSpan(
+                                                          TextSpan(
                                                             text:
                                                                 '\n34% than last week',
                                                             style: TextStyle(),
@@ -1430,7 +1437,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Outfit',
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFF39D2C0),
                                                               fontSize: 14.0,
                                                               letterSpacing:
@@ -1442,7 +1449,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                       ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.trending_up_rounded,
                                                     color: Color(0xFF39D2C0),
                                                     size: 24.0,
@@ -1450,7 +1457,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child:
                                                           CircularPercentIndicator(
@@ -1461,9 +1468,9 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         animateFromLastPercent:
                                                             true,
                                                         progressColor:
-                                                            const Color(0xFF6F61EF),
+                                                            Color(0xFF6F61EF),
                                                         backgroundColor:
-                                                            const Color(0x4D9489F5),
+                                                            Color(0x4D9489F5),
                                                         center: Text(
                                                           '37%',
                                                           style: FlutterFlowTheme
@@ -1472,7 +1479,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Figtree',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
@@ -1485,7 +1492,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 4.0)),
+                                                ].divide(SizedBox(width: 4.0)),
                                               ),
                                             ),
                                           ],
@@ -1495,14 +1502,14 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         'containerOnPageLoadAnimation7']!),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: 100.0,
                                       height: 120.0,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
-                                        boxShadow: const [
+                                        boxShadow: [
                                           BoxShadow(
                                             blurRadius: 3.0,
                                             color: Color(0x33000000),
@@ -1515,12 +1522,12 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE5E7EB),
+                                          color: Color(0xFFE5E7EB),
                                           width: 1.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1535,7 +1542,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF606A85),
+                                                    color: Color(0xFF606A85),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -1549,7 +1556,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             -1.0, 1.0),
                                                     child: RichText(
                                                       textScaler:
@@ -1565,7 +1572,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
-                                                                  color: const Color(
+                                                                  color: Color(
                                                                       0xFF15161E),
                                                                   fontSize:
                                                                       44.0,
@@ -1576,7 +1583,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                                           .normal,
                                                                 ),
                                                           ),
-                                                          const TextSpan(
+                                                          TextSpan(
                                                             text:
                                                                 '\n12% than last week',
                                                             style: TextStyle(),
@@ -1588,7 +1595,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Outfit',
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFF39D2C0),
                                                               fontSize: 14.0,
                                                               letterSpacing:
@@ -1600,7 +1607,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                       ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.trending_up_rounded,
                                                     color: Color(0xFF39D2C0),
                                                     size: 24.0,
@@ -1608,7 +1615,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          const AlignmentDirectional(
+                                                          AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child:
                                                           CircularPercentIndicator(
@@ -1619,9 +1626,9 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                         animateFromLastPercent:
                                                             true,
                                                         progressColor:
-                                                            const Color(0xFF6F61EF),
+                                                            Color(0xFF6F61EF),
                                                         backgroundColor:
-                                                            const Color(0x4D9489F5),
+                                                            Color(0x4D9489F5),
                                                         center: Text(
                                                           '82%',
                                                           style: FlutterFlowTheme
@@ -1630,7 +1637,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Figtree',
-                                                                color: const Color(
+                                                                color: Color(
                                                                     0xFF15161E),
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
@@ -1643,7 +1650,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                                       ),
                                                     ),
                                                   ),
-                                                ].divide(const SizedBox(width: 4.0)),
+                                                ].divide(SizedBox(width: 4.0)),
                                               ),
                                             ),
                                           ],
@@ -1652,7 +1659,7 @@ class _ProgressWidgetState extends State<ProgressWidget>
                                     ).animateOnPageLoad(animationsMap[
                                         'containerOnPageLoadAnimation8']!),
                                   ),
-                                ].divide(const SizedBox(height: 12.0)),
+                                ].divide(SizedBox(height: 12.0)),
                               ),
                             ],
                           ),

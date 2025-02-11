@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'main_model.dart';
 export 'main_model.dart';
 
@@ -45,9 +47,9 @@ class _MainWidgetState extends State<MainWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: const AlignmentDirectional(0.0, -1.0),
+                alignment: AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Text(
                     'Welcome to ',
                     textAlign: TextAlign.start,
@@ -61,10 +63,10 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.72, -0.83),
+                alignment: AlignmentDirectional(-0.72, -0.83),
                 child: Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 0.0, 290.0),
+                      EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 0.0, 290.0),
                   child: Text(
                     'MINDORIA',
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -77,9 +79,9 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.14, -0.68),
+                alignment: AlignmentDirectional(-0.14, -0.68),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 120.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 120.0, 0.0),
                   child: Text(
                     'How are you feeling today?',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -91,7 +93,7 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.75, -0.38),
+                alignment: AlignmentDirectional(-0.75, -0.38),
                 child: Text(
                   'Thought of the day',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -102,11 +104,11 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.04, -0.56),
+                alignment: AlignmentDirectional(-0.04, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(12.0),
@@ -115,7 +117,7 @@ class _MainWidgetState extends State<MainWidget> {
                       topRight: Radius.circular(12.0),
                     ),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Stack(
                     children: [
                       FFButtonWidget(
@@ -126,9 +128,9 @@ class _MainWidgetState extends State<MainWidget> {
                         options: FFButtonOptions(
                           width: 45.0,
                           height: 45.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).info,
                           textStyle:
@@ -143,7 +145,7 @@ class _MainWidgetState extends State<MainWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
@@ -159,11 +161,11 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.77, -0.56),
+                alignment: AlignmentDirectional(-0.77, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(12.0),
@@ -172,7 +174,7 @@ class _MainWidgetState extends State<MainWidget> {
                       topRight: Radius.circular(12.0),
                     ),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Stack(
                     children: [
                       FFButtonWidget(
@@ -183,9 +185,9 @@ class _MainWidgetState extends State<MainWidget> {
                         options: FFButtonOptions(
                           width: 45.0,
                           height: 45.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).info,
                           textStyle:
@@ -200,7 +202,7 @@ class _MainWidgetState extends State<MainWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 6.6, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 6.6, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
@@ -216,15 +218,15 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.4, -0.56),
+                alignment: AlignmentDirectional(-0.4, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Stack(
                     children: [
                       FFButtonWidget(
@@ -235,9 +237,9 @@ class _MainWidgetState extends State<MainWidget> {
                         options: FFButtonOptions(
                           width: 45.0,
                           height: 45.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).info,
                           textStyle:
@@ -252,7 +254,7 @@ class _MainWidgetState extends State<MainWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 6.6, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 6.6, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
@@ -268,11 +270,11 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.34, -0.56),
+                alignment: AlignmentDirectional(0.34, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(12.0),
@@ -281,7 +283,7 @@ class _MainWidgetState extends State<MainWidget> {
                       topRight: Radius.circular(12.0),
                     ),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Stack(
                     children: [
                       FFButtonWidget(
@@ -292,9 +294,9 @@ class _MainWidgetState extends State<MainWidget> {
                         options: FFButtonOptions(
                           width: 45.0,
                           height: 45.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).info,
                           textStyle:
@@ -308,7 +310,7 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.35, -0.59),
+                        alignment: AlignmentDirectional(0.35, -0.59),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
@@ -316,7 +318,7 @@ class _MainWidgetState extends State<MainWidget> {
                             width: 53.0,
                             height: 79.0,
                             fit: BoxFit.cover,
-                            alignment: const Alignment(0.0, 0.0),
+                            alignment: Alignment(0.0, 0.0),
                           ),
                         ),
                       ),
@@ -325,12 +327,12 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.73, -0.56),
+                alignment: AlignmentDirectional(0.73, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
                   child: Stack(
@@ -343,9 +345,9 @@ class _MainWidgetState extends State<MainWidget> {
                         options: FFButtonOptions(
                           width: 45.0,
                           height: 45.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).info,
                           textStyle:
@@ -359,9 +361,9 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.71, -0.56),
+                        alignment: AlignmentDirectional(0.71, -0.56),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 6.6, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12.0),
@@ -379,7 +381,7 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.02, -0.14),
+                alignment: AlignmentDirectional(-0.02, -0.14),
                 child: Container(
                   width: 335.0,
                   height: 125.0,
@@ -390,7 +392,7 @@ class _MainWidgetState extends State<MainWidget> {
                   child: Stack(
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(1.0, 0.0),
+                        alignment: AlignmentDirectional(1.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
@@ -398,14 +400,14 @@ class _MainWidgetState extends State<MainWidget> {
                             width: 150.0,
                             height: 200.0,
                             fit: BoxFit.cover,
-                            alignment: const Alignment(1.0, 0.0),
+                            alignment: Alignment(1.0, 0.0),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(-0.61, -0.19),
+                        alignment: AlignmentDirectional(-0.61, -0.19),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 90.0, 30.0),
                           child: Text(
                             'The building blocks \nof wellbeing',
@@ -422,9 +424,9 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(-1.0, 1.0),
+                        alignment: AlignmentDirectional(-1.0, 1.0),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 0.0, 15.0),
                           child: FFButtonWidget(
                             onPressed: () {
@@ -433,9 +435,9 @@ class _MainWidgetState extends State<MainWidget> {
                             text: 'Read',
                             options: FFButtonOptions(
                               height: 30.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primaryText,
                               textStyle: FlutterFlowTheme.of(context)
@@ -459,23 +461,23 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: const EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(20.0),
                   child: ListView(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    padding: EdgeInsets.symmetric(horizontal: 10.0),
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(0.73, 0.72),
+                        alignment: AlignmentDirectional(0.73, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 210.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -485,7 +487,7 @@ class _MainWidgetState extends State<MainWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(-0.15, -0.84),
+                                alignment: AlignmentDirectional(-0.15, -0.84),
                                 child: Text(
                                   'AI-Based Therapy',
                                   textAlign: TextAlign.center,
@@ -500,7 +502,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
                                     print('Button pressed ...');
@@ -509,9 +511,9 @@ class _MainWidgetState extends State<MainWidget> {
                                   options: FFButtonOptions(
                                     width: 126.0,
                                     height: 103.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: const EdgeInsets.all(8.0),
+                                    iconPadding: EdgeInsets.all(8.0),
                                     color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -526,7 +528,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -534,7 +536,7 @@ class _MainWidgetState extends State<MainWidget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 0.0),
+                                    alignment: Alignment(0.0, 0.0),
                                   ),
                                 ),
                               ),
@@ -543,14 +545,14 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 210.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -560,7 +562,7 @@ class _MainWidgetState extends State<MainWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Personalized Sessions',
                                   style: FlutterFlowTheme.of(context)
@@ -574,7 +576,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
                                     print('Button pressed ...');
@@ -583,9 +585,9 @@ class _MainWidgetState extends State<MainWidget> {
                                   options: FFButtonOptions(
                                     width: 126.0,
                                     height: 103.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -601,7 +603,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -609,7 +611,7 @@ class _MainWidgetState extends State<MainWidget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
@@ -618,14 +620,14 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 210.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -635,7 +637,7 @@ class _MainWidgetState extends State<MainWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Guided Meditation',
                                   style: FlutterFlowTheme.of(context)
@@ -649,7 +651,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
                                     print('Button pressed ...');
@@ -658,9 +660,9 @@ class _MainWidgetState extends State<MainWidget> {
                                   options: FFButtonOptions(
                                     width: 126.0,
                                     height: 103.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -676,7 +678,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -684,7 +686,7 @@ class _MainWidgetState extends State<MainWidget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 0.0),
+                                    alignment: Alignment(0.0, 0.0),
                                   ),
                                 ),
                               ),
@@ -693,14 +695,14 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 210.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -710,7 +712,7 @@ class _MainWidgetState extends State<MainWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Daily Reminders',
                                   textAlign: TextAlign.center,
@@ -725,7 +727,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
                                     print('Button pressed ...');
@@ -734,9 +736,9 @@ class _MainWidgetState extends State<MainWidget> {
                                   options: FFButtonOptions(
                                     width: 126.0,
                                     height: 103.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -752,7 +754,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -760,7 +762,7 @@ class _MainWidgetState extends State<MainWidget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
@@ -769,14 +771,14 @@ class _MainWidgetState extends State<MainWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 210.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -786,7 +788,7 @@ class _MainWidgetState extends State<MainWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Progress Reports',
                                   style: FlutterFlowTheme.of(context)
@@ -800,7 +802,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
                                     print('Button pressed ...');
@@ -809,9 +811,9 @@ class _MainWidgetState extends State<MainWidget> {
                                   options: FFButtonOptions(
                                     width: 126.0,
                                     height: 103.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).info,
                                     textStyle: FlutterFlowTheme.of(context)
@@ -827,7 +829,7 @@ class _MainWidgetState extends State<MainWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.44),
+                                alignment: AlignmentDirectional(0.0, 0.44),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
@@ -835,7 +837,7 @@ class _MainWidgetState extends State<MainWidget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 0.0),
+                                    alignment: Alignment(0.0, 0.0),
                                   ),
                                 ),
                               ),
@@ -843,12 +845,12 @@ class _MainWidgetState extends State<MainWidget> {
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 10.0)),
+                    ].divide(SizedBox(width: 10.0)),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.76, 0.14),
+                alignment: AlignmentDirectional(-0.76, 0.14),
                 child: Text(
                   'Therapy Options ',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -859,9 +861,9 @@ class _MainWidgetState extends State<MainWidget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-1.0, -1.0),
+                alignment: AlignmentDirectional(-1.0, -1.0),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 150.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 150.0),
                   child: Icon(
                     Icons.chevron_left_sharp,
                     color: FlutterFlowTheme.of(context).primaryText,

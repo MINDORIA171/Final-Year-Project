@@ -1,7 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_web_view.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'home18_travel_model.dart';
 export 'home18_travel_model.dart';
 
@@ -39,7 +43,7 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF1F5F8),
+        backgroundColor: Color(0xFFF1F5F8),
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
@@ -52,14 +56,14 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                   children: [
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
                       child: Text(
                         'Articles and Blogs',
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
                               fontFamily: 'Outfit',
-                              color: const Color(0xFF0F1113),
+                              color: Color(0xFF0F1113),
                               fontSize: 24.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
@@ -74,13 +78,13 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                   scrollDirection: Axis.vertical,
                   children: [
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 10.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 7.0,
                               color: Color(0x2F1D2429),
@@ -93,7 +97,7 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -121,13 +125,13 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 10.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 7.0,
                               color: Color(0x2F1D2429),
@@ -140,11 +144,11 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              const FlutterFlowWebView(
+                              FlutterFlowWebView(
                                 content:
                                     'https://www.therapyroute.com/article/understanding-mood-swings-by-l-ravi-kumar',
                                 bypass: false,
@@ -154,7 +158,7 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                                 horizontalScroll: false,
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 8.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -177,13 +181,13 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 10.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 7.0,
                               color: Color(0x2F1D2429),
@@ -196,11 +200,11 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              const FlutterFlowWebView(
+                              FlutterFlowWebView(
                                 content:
                                     'https://www.therapyroute.com/article/the-role-of-spirituality-on-the-human-condition-and-healing-by-a-demiraj-miho-antone',
                                 bypass: false,
@@ -210,7 +214,7 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                                 horizontalScroll: false,
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 8.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -233,13 +237,13 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 10.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 7.0,
                               color: Color(0x2F1D2429),
@@ -252,11 +256,11 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(12.0),
+                          padding: EdgeInsets.all(12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              const FlutterFlowWebView(
+                              FlutterFlowWebView(
                                 content:
                                     'https://www.therapyroute.com/article/how-to-be-happier-every-day-by-ad-bush',
                                 bypass: false,
@@ -266,7 +270,7 @@ class _Home18TravelWidgetState extends State<Home18TravelWidget> {
                                 horizontalScroll: false,
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 8.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,

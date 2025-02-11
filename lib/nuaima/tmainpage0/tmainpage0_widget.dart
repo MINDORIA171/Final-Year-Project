@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'tmainpage0_model.dart';
 export 'tmainpage0_model.dart';
 
@@ -45,9 +47,9 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
           child: Stack(
             children: [
               Align(
-                alignment: const AlignmentDirectional(-0.78, -0.9),
+                alignment: AlignmentDirectional(-0.78, -0.9),
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Text(
                     'Welcome to ',
                     textAlign: TextAlign.start,
@@ -60,7 +62,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.72, -0.83),
+                alignment: AlignmentDirectional(-0.72, -0.83),
                 child: Text(
                   'Mindoria',
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -72,15 +74,15 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.04, -0.56),
+                alignment: AlignmentDirectional(-0.04, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.network(
@@ -93,15 +95,15 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.77, -0.56),
+                alignment: AlignmentDirectional(-0.77, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.network(
@@ -114,15 +116,15 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.4, -0.56),
+                alignment: AlignmentDirectional(-0.4, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.network(
@@ -135,17 +137,17 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.34, -0.56),
+                alignment: AlignmentDirectional(0.34, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: const AlignmentDirectional(0.0, 0.0),
+                  alignment: AlignmentDirectional(0.0, 0.0),
                   child: Align(
-                    alignment: const AlignmentDirectional(0.35, -0.59),
+                    alignment: AlignmentDirectional(0.35, -0.59),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.network(
@@ -153,25 +155,25 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         width: 53.0,
                         height: 79.0,
                         fit: BoxFit.cover,
-                        alignment: const Alignment(0.0, 0.0),
+                        alignment: Alignment(0.0, 0.0),
                       ),
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.73, -0.56),
+                alignment: AlignmentDirectional(0.73, -0.56),
                 child: Container(
                   width: 45.0,
                   height: 45.0,
                   decoration: BoxDecoration(
-                    color: const Color(0x98FFFFFF),
+                    color: Color(0x98FFFFFF),
                     borderRadius: BorderRadius.circular(12.0),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.71, -0.56),
+                alignment: AlignmentDirectional(0.71, -0.56),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.network(
@@ -183,7 +185,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.14, -0.68),
+                alignment: AlignmentDirectional(-0.14, -0.68),
                 child: Text(
                   'How\'s you feeling today?',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -200,7 +202,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                   width: 0.0,
                   height: 287.0,
                   fit: BoxFit.contain,
-                  alignment: const Alignment(1.0, 0.0),
+                  alignment: Alignment(1.0, 0.0),
                 ),
               ),
               ClipRRect(
@@ -210,11 +212,11 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                   width: 0.0,
                   height: 287.0,
                   fit: BoxFit.contain,
-                  alignment: const Alignment(1.0, 0.0),
+                  alignment: Alignment(1.0, 0.0),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.02, -0.14),
+                alignment: AlignmentDirectional(-0.02, -0.14),
                 child: Container(
                   width: 334.0,
                   height: 114.0,
@@ -223,7 +225,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                     borderRadius: BorderRadius.circular(14.0),
                   ),
                   child: Align(
-                    alignment: const AlignmentDirectional(1.0, 0.0),
+                    alignment: AlignmentDirectional(1.0, 0.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.network(
@@ -231,14 +233,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         width: 132.0,
                         height: 200.0,
                         fit: BoxFit.cover,
-                        alignment: const Alignment(1.0, 0.0),
+                        alignment: Alignment(1.0, 0.0),
                       ),
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.61, -0.19),
+                alignment: AlignmentDirectional(-0.61, -0.19),
                 child: Text(
                   'The building block of\nwell being.',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -249,7 +251,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.75, -0.38),
+                alignment: AlignmentDirectional(-0.75, -0.38),
                 child: Text(
                   'Thought of the day',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -260,23 +262,23 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: const EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(20.0),
                   child: ListView(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    padding: EdgeInsets.symmetric(horizontal: 10.0),
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(0.73, 0.72),
+                        alignment: AlignmentDirectional(0.73, 0.72),
                         child: Container(
                           width: 165.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -286,7 +288,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -294,12 +296,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 126.0,
                                     height: 103.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 0.0),
+                                    alignment: Alignment(0.0, 0.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(-0.15, -0.84),
+                                alignment: AlignmentDirectional(-0.15, -0.84),
                                 child: Text(
                                   'Guided Meditation',
                                   style: FlutterFlowTheme.of(context)
@@ -317,14 +319,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 156.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -334,7 +336,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -342,12 +344,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 191.0,
                                     height: 148.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'AI-Based Therapy',
                                   style: FlutterFlowTheme.of(context)
@@ -365,14 +367,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 156.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -382,7 +384,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -390,12 +392,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 191.0,
                                     height: 148.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   ' Daily Reminder ',
                                   style: FlutterFlowTheme.of(context)
@@ -413,14 +415,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 156.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -430,7 +432,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -438,12 +440,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 191.0,
                                     height: 148.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Support Sessions ',
                                   style: FlutterFlowTheme.of(context)
@@ -461,14 +463,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 156.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -478,7 +480,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -486,12 +488,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 191.0,
                                     height: 148.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Personalized Sessions ',
                                   style: FlutterFlowTheme.of(context)
@@ -509,14 +511,14 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.76, 0.72),
+                        alignment: AlignmentDirectional(0.76, 0.72),
                         child: Container(
                           width: 156.0,
                           height: 213.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(16.0),
@@ -526,7 +528,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: const AlignmentDirectional(0.0, 0.44),
+                                alignment: AlignmentDirectional(0.0, 0.44),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.network(
@@ -534,12 +536,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                                     width: 191.0,
                                     height: 148.0,
                                     fit: BoxFit.cover,
-                                    alignment: const Alignment(0.0, 1.0),
+                                    alignment: Alignment(0.0, 1.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: const AlignmentDirectional(0.04, -0.84),
+                                alignment: AlignmentDirectional(0.04, -0.84),
                                 child: Text(
                                   'Progress Tracking',
                                   style: FlutterFlowTheme.of(context)
@@ -556,16 +558,16 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           ),
                         ),
                       ),
-                    ].divide(const SizedBox(width: 10.0)),
+                    ].divide(SizedBox(width: 10.0)),
                   ),
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.11, 1.13),
+                alignment: AlignmentDirectional(0.11, 1.13),
                 child: Container(
                   width: 342.0,
                   height: 100.0,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Color(0xFF1F2D3B),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(16.0),
@@ -577,12 +579,12 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                   child: Stack(
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(1.0, 0.0),
+                        alignment: AlignmentDirectional(1.0, 0.0),
                         child: Container(
                           width: 100.0,
                           height: 100.0,
                           clipBehavior: Clip.antiAlias,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.circle,
                           ),
                           child: Image.network(
@@ -592,7 +594,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(-0.7, 0.06),
+                        alignment: AlignmentDirectional(-0.7, 0.06),
                         child: FFButtonWidget(
                           onPressed: () {
                             print('Button pressed ...');
@@ -600,9 +602,9 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                           text: 'Connect',
                           options: FFButtonOptions(
                             height: 40.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
-                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -622,7 +624,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.76, 0.14),
+                alignment: AlignmentDirectional(-0.76, 0.14),
                 child: Text(
                   'Therapy Options ',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -633,7 +635,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.76, 0.84),
+                alignment: AlignmentDirectional(-0.76, 0.84),
                 child: Text(
                   'Therapist Available',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -644,7 +646,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(-0.74, -0.06),
+                alignment: AlignmentDirectional(-0.74, -0.06),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
@@ -653,9 +655,9 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconPadding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).alternate,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Inter Tight',
@@ -668,7 +670,7 @@ class _Tmainpage0WidgetState extends State<Tmainpage0Widget> {
                 ),
               ),
               Align(
-                alignment: const AlignmentDirectional(0.78, -0.88),
+                alignment: AlignmentDirectional(0.78, -0.88),
                 child: Icon(
                   Icons.account_circle_sharp,
                   color: FlutterFlowTheme.of(context).primaryText,

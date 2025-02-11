@@ -1,8 +1,14 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'dashboard_model.dart';
 export 'dashboard_model.dart';
 
@@ -49,8 +55,8 @@ class _DashboardWidgetState extends State<DashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(30.0, 0.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(30.0, 0.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -68,8 +74,8 @@ class _DashboardWidgetState extends State<DashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(50.0, 0.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(50.0, 0.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -87,8 +93,8 @@ class _DashboardWidgetState extends State<DashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 30.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 30.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -106,8 +112,8 @@ class _DashboardWidgetState extends State<DashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 40.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -136,25 +142,25 @@ class _DashboardWidgetState extends State<DashboardWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFF1F5F8),
+        backgroundColor: Color(0xFFF1F5F8),
         body: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 44.0, 16.0, 12.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 44.0, 16.0, 12.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Card(
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: const Color(0xFF827AE1),
+                      color: Color(0xFF827AE1),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(40.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: EdgeInsets.all(2.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(40.0),
                           child: Image.network(
@@ -168,7 +174,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -179,14 +185,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                 .titleLarge
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: const Color(0xFF0F1113),
+                                  color: Color(0xFF0F1113),
                                   fontSize: 18.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 4.0, 0.0, 0.0),
                             child: Text(
                               'Good morning Max!',
@@ -194,7 +200,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                   .labelMedium
                                   .override(
                                     fontFamily: 'Plus Jakarta Sans',
-                                    color: const Color(0xFF57636C),
+                                    color: Color(0xFF57636C),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -208,13 +214,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 50.0,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    boxShadow: const [
+                    boxShadow: [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x34090F13),
@@ -228,7 +234,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController,
                       focusNode: _model.textFieldFocusNode,
@@ -238,7 +244,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                         labelStyle:
                             FlutterFlowTheme.of(context).labelLarge.override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: const Color(0xFF57636C),
+                                  color: Color(0xFF57636C),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -247,16 +253,16 @@ class _DashboardWidgetState extends State<DashboardWidget>
                         focusedBorder: InputBorder.none,
                         errorBorder: InputBorder.none,
                         focusedErrorBorder: InputBorder.none,
-                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 12.0, 12.0, 12.0),
-                        prefixIcon: const Icon(
+                        prefixIcon: Icon(
                           Icons.search_sharp,
                           color: Color(0xFF57636C),
                         ),
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
                             fontFamily: 'Plus Jakarta Sans',
-                            color: const Color(0xFF0F1113),
+                            color: Color(0xFF0F1113),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w500,
@@ -268,12 +274,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                 child: Text(
                   'Categories',
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
                         fontFamily: 'Outfit',
-                        color: const Color(0xFF0F1113),
+                        color: Color(0xFF0F1113),
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
@@ -283,7 +289,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
               Container(
                 width: double.infinity,
                 height: 250.0,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   color: Color(0xFFF1F5F8),
                 ),
                 child: ListView(
@@ -293,14 +299,14 @@ class _DashboardWidgetState extends State<DashboardWidget>
                   scrollDirection: Axis.horizontal,
                   children: [
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
+                      padding: EdgeInsetsDirectional.fromSTEB(
                           16.0, 12.0, 12.0, 12.0),
                       child: Container(
                         width: 230.0,
                         height: 50.0,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x34090F13),
@@ -318,7 +324,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                             Container(
                               width: double.infinity,
                               height: 140.0,
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 color: Color(0xFF81E1D7),
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(0.0),
@@ -328,7 +334,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.all(12.0),
+                                padding: EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -339,12 +345,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                       width: 36.0,
                                       height: 36.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0x98FFFFFF),
+                                        color: Color(0x98FFFFFF),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
-                                      child: const Icon(
+                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      child: Icon(
                                         Icons.desktop_windows,
                                         color: Colors.white,
                                         size: 20.0,
@@ -379,27 +385,27 @@ class _DashboardWidgetState extends State<DashboardWidget>
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 12.0, 12.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  SizedBox(
+                                  Container(
                                     width: 150.0,
                                     child: Stack(
                                       alignment:
-                                          const AlignmentDirectional(-1.0, 0.0),
+                                          AlignmentDirectional(-1.0, 0.0),
                                       children: [
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.91, 0.0),
+                                              AlignmentDirectional(-0.91, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -410,12 +416,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.62, 0.0),
+                                              AlignmentDirectional(-0.62, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -426,12 +432,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.35, 0.0),
+                                              AlignmentDirectional(-0.35, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -444,7 +450,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 8.0, 0.0),
                                     child: Text(
                                       '30%',
@@ -452,7 +458,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Plus Jakarta Sans',
-                                            color: const Color(0xFF0F1113),
+                                            color: Color(0xFF0F1113),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -469,13 +475,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 16.0, 12.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 16.0, 12.0),
                       child: Container(
                         width: 230.0,
                         height: 50.0,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: const [
+                          boxShadow: [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x34090F13),
@@ -493,7 +499,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                             Container(
                               width: double.infinity,
                               height: 140.0,
-                              decoration: const BoxDecoration(
+                              decoration: BoxDecoration(
                                 color: Color(0xFFF1B49B),
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(0.0),
@@ -503,7 +509,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: const EdgeInsets.all(12.0),
+                                padding: EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -514,12 +520,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                       width: 36.0,
                                       height: 36.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0x98FFFFFF),
+                                        color: Color(0x98FFFFFF),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
-                                      child: const Icon(
+                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      child: Icon(
                                         Icons.design_services_outlined,
                                         color: Colors.white,
                                         size: 20.0,
@@ -554,27 +560,27 @@ class _DashboardWidgetState extends State<DashboardWidget>
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 12.0, 12.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  SizedBox(
+                                  Container(
                                     width: 150.0,
                                     child: Stack(
                                       alignment:
-                                          const AlignmentDirectional(-1.0, 0.0),
+                                          AlignmentDirectional(-1.0, 0.0),
                                       children: [
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.91, 0.0),
+                                              AlignmentDirectional(-0.91, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -585,12 +591,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.62, 0.0),
+                                              AlignmentDirectional(-0.62, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -601,12 +607,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         ),
                                         Align(
                                           alignment:
-                                              const AlignmentDirectional(-0.35, 0.0),
+                                              AlignmentDirectional(-0.35, 0.0),
                                           child: Container(
                                             width: 28.0,
                                             height: 28.0,
                                             clipBehavior: Clip.antiAlias,
-                                            decoration: const BoxDecoration(
+                                            decoration: BoxDecoration(
                                               shape: BoxShape.circle,
                                             ),
                                             child: Image.network(
@@ -619,7 +625,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 8.0, 0.0),
                                     child: Text(
                                       '30%',
@@ -627,7 +633,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Plus Jakarta Sans',
-                                            color: const Color(0xFF0F1113),
+                                            color: Color(0xFF0F1113),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -646,12 +652,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                 child: Text(
                   'My Tasks',
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
                         fontFamily: 'Outfit',
-                        color: const Color(0xFF0F1113),
+                        color: Color(0xFF0F1113),
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
@@ -659,11 +665,11 @@ class _DashboardWidgetState extends State<DashboardWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 400.0,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
@@ -683,28 +689,28 @@ class _DashboardWidgetState extends State<DashboardWidget>
                     ),
                   ),
                   child: Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                     child: Column(
                       children: [
                         Align(
-                          alignment: const Alignment(0.0, 0),
+                          alignment: Alignment(0.0, 0),
                           child: TabBar(
                             isScrollable: true,
-                            labelColor: const Color(0xFF827AE1),
-                            unselectedLabelColor: const Color(0xFF57636C),
+                            labelColor: Color(0xFF827AE1),
+                            unselectedLabelColor: Color(0xFF57636C),
                             labelStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Plus Jakarta Sans',
-                                  color: const Color(0xFF0F1113),
+                                  color: Color(0xFF0F1113),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
-                            unselectedLabelStyle: const TextStyle(),
-                            indicatorColor: const Color(0xFF827AE1),
+                            unselectedLabelStyle: TextStyle(),
+                            indicatorColor: Color(0xFF827AE1),
                             indicatorWeight: 2.0,
-                            tabs: const [
+                            tabs: [
                               Tab(
                                 text: 'Today',
                               ),
@@ -726,7 +732,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                             controller: _model.tabBarController,
                             children: [
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -735,7 +741,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Container(
                                         width: double.infinity,
@@ -744,12 +750,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE0E3E7),
+                                            color: Color(0xFFE0E3E7),
                                             width: 2.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -763,7 +769,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 20.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -771,7 +777,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -783,7 +789,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF57636C),
+                                                            Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -791,7 +797,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 height: 24.0,
                                                 thickness: 1.0,
                                                 color: Color(0xFFE0E3E7),
@@ -810,7 +816,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -820,7 +826,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -834,7 +840,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Plus Jakarta Sans',
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFF827AE1),
                                                               fontSize: 14.0,
                                                               letterSpacing:
@@ -850,13 +856,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     width: 100.0,
                                                     height: 32.0,
                                                     decoration: BoxDecoration(
-                                                      color: const Color(0xFF81E1D7),
+                                                      color: Color(0xFF81E1D7),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               32.0),
                                                     ),
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
                                                       'In Progress',
@@ -889,12 +895,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE0E3E7),
+                                          color: Color(0xFFE0E3E7),
                                           width: 2.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -908,7 +914,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            const Color(0xFF0F1113),
+                                                            Color(0xFF0F1113),
                                                         fontSize: 20.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -916,7 +922,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Create themes for use by our users.',
@@ -927,7 +933,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF57636C),
+                                                              Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -935,7 +941,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         ),
                                               ),
                                             ),
-                                            const Divider(
+                                            Divider(
                                               height: 24.0,
                                               thickness: 1.0,
                                               color: Color(0xFFE0E3E7),
@@ -954,7 +960,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF0F1113),
+                                                            Color(0xFF0F1113),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -964,7 +970,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -975,7 +981,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF827AE1),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -989,13 +995,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   width: 100.0,
                                                   height: 32.0,
                                                   decoration: BoxDecoration(
-                                                    color: const Color(0xFF81E1D7),
+                                                    color: Color(0xFF81E1D7),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             32.0),
                                                   ),
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     'In Progress',
@@ -1024,7 +1030,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -1033,7 +1039,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1042,12 +1048,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE0E3E7),
+                                            color: Color(0xFFE0E3E7),
                                             width: 2.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -1061,7 +1067,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 20.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1069,7 +1075,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -1081,7 +1087,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF57636C),
+                                                            Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1089,7 +1095,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 height: 24.0,
                                                 thickness: 1.0,
                                                 color: Color(0xFFE0E3E7),
@@ -1108,7 +1114,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1118,7 +1124,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -1132,7 +1138,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Plus Jakarta Sans',
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFF827AE1),
                                                               fontSize: 14.0,
                                                               letterSpacing:
@@ -1148,13 +1154,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     width: 100.0,
                                                     height: 32.0,
                                                     decoration: BoxDecoration(
-                                                      color: const Color(0xFF81E1D7),
+                                                      color: Color(0xFF81E1D7),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               32.0),
                                                     ),
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
                                                       'In Progress',
@@ -1186,12 +1192,12 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE0E3E7),
+                                          color: Color(0xFFE0E3E7),
                                           width: 2.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1205,7 +1211,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            const Color(0xFF0F1113),
+                                                            Color(0xFF0F1113),
                                                         fontSize: 20.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1213,7 +1219,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Create template screen for task todo app.',
@@ -1224,7 +1230,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF57636C),
+                                                              Color(0xFF57636C),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1232,7 +1238,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         ),
                                               ),
                                             ),
-                                            const Divider(
+                                            Divider(
                                               height: 24.0,
                                               thickness: 1.0,
                                               color: Color(0xFFE0E3E7),
@@ -1251,7 +1257,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF0F1113),
+                                                            Color(0xFF0F1113),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1261,7 +1267,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1272,7 +1278,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF827AE1),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1286,13 +1292,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   width: 100.0,
                                                   height: 32.0,
                                                   decoration: BoxDecoration(
-                                                    color: const Color(0xFF81E1D7),
+                                                    color: Color(0xFF81E1D7),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             32.0),
                                                   ),
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     'In Progress',
@@ -1320,7 +1326,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -1329,21 +1335,21 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
-                                          color: const Color(0xFFF1F5F8),
+                                          color: Color(0xFFF1F5F8),
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: const Color(0xFFE0E3E7),
+                                            color: Color(0xFFE0E3E7),
                                             width: 2.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12.0),
+                                          padding: EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
@@ -1356,7 +1362,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     .headlineSmall
                                                     .override(
                                                       fontFamily: 'Outfit',
-                                                      color: const Color(0xFF0F1113),
+                                                      color: Color(0xFF0F1113),
                                                       fontSize: 20.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -1366,7 +1372,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -1378,7 +1384,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF57636C),
+                                                            Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1389,7 +1395,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       ),
                                                 ),
                                               ),
-                                              const Divider(
+                                              Divider(
                                                 height: 24.0,
                                                 thickness: 1.0,
                                                 color: Color(0xFFE0E3E7),
@@ -1408,7 +1414,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1418,7 +1424,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   8.0,
                                                                   0.0,
@@ -1432,7 +1438,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                             .override(
                                                               fontFamily:
                                                                   'Plus Jakarta Sans',
-                                                              color: const Color(
+                                                              color: Color(
                                                                   0xFF827AE1),
                                                               fontSize: 14.0,
                                                               letterSpacing:
@@ -1454,7 +1460,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                               32.0),
                                                     ),
                                                     alignment:
-                                                        const AlignmentDirectional(
+                                                        AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
                                                       'Complete',
@@ -1464,7 +1470,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF0F1113),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1483,16 +1489,16 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: const Color(0xFFF1F5F8),
+                                        color: Color(0xFFF1F5F8),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                         border: Border.all(
-                                          color: const Color(0xFFE0E3E7),
+                                          color: Color(0xFFE0E3E7),
                                           width: 2.0,
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsets.all(12.0),
+                                        padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -1505,7 +1511,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   .headlineSmall
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: const Color(0xFF0F1113),
+                                                    color: Color(0xFF0F1113),
                                                     fontSize: 20.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight:
@@ -1515,7 +1521,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Create template screen for task todo app.',
@@ -1525,7 +1531,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     .override(
                                                       fontFamily:
                                                           'Plus Jakarta Sans',
-                                                      color: const Color(0xFF57636C),
+                                                      color: Color(0xFF57636C),
                                                       fontSize: 14.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -1535,7 +1541,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                     ),
                                               ),
                                             ),
-                                            const Divider(
+                                            Divider(
                                               height: 24.0,
                                               thickness: 1.0,
                                               color: Color(0xFFE0E3E7),
@@ -1554,7 +1560,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         fontFamily:
                                                             'Plus Jakarta Sans',
                                                         color:
-                                                            const Color(0xFF0F1113),
+                                                            Color(0xFF0F1113),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1564,7 +1570,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(8.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1575,7 +1581,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Plus Jakarta Sans',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF827AE1),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1595,7 +1601,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                             32.0),
                                                   ),
                                                   alignment:
-                                                      const AlignmentDirectional(
+                                                      AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     'Complete',
@@ -1606,7 +1612,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF0F1113),
+                                                              Color(0xFF0F1113),
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:

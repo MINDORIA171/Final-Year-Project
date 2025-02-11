@@ -2,8 +2,12 @@ import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'blog_details_model.dart';
 export 'blog_details_model.dart';
 
@@ -50,7 +54,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_rounded,
               color: Color(0xFF0F1113),
               size: 30.0,
@@ -59,7 +63,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
               print('IconButton pressed ...');
             },
           ),
-          actions: const [],
+          actions: [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -71,12 +75,12 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
                   child: Text(
                     'Anxiety and Stress',
                     style: FlutterFlowTheme.of(context).displaySmall.override(
                           fontFamily: 'Outfit',
-                          color: const Color(0xFF0F1113),
+                          color: Color(0xFF0F1113),
                           fontSize: 32.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
@@ -84,7 +88,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(12.0),
+                  padding: EdgeInsets.all(12.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
@@ -96,7 +100,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 8.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 8.0),
                   child: Text(
                     ' 5-4-3-2-1 Grounding Technique',
                     style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -109,12 +113,12 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                 Flexible(
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                     child: Text(
                       'Here is a description and procedure of this exercise We hope you find it useful and beneficial.',
                       style: FlutterFlowTheme.of(context).labelLarge.override(
                             fontFamily: 'Outfit',
-                            color: const Color(0xFF57636C),
+                            color: Color(0xFF57636C),
                             fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w500,
@@ -124,13 +128,13 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
                   child: Container(
                     width: double.infinity,
                     height: 50.0,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF1F4F8),
-                      boxShadow: const [
+                      color: Color(0xFFF1F4F8),
+                      boxShadow: [
                         BoxShadow(
                           blurRadius: 3.0,
                           color: Color(0x33000000),
@@ -145,7 +149,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                     child: FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController1 ??=
                           FormFieldController<String>(null),
-                      options: const [
+                      options: [
                         'Stops anxious thoughts by engaging the senses'
                       ],
                       onChanged: (val) =>
@@ -169,7 +173,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                       borderWidth: 0.0,
                       borderRadius: 8.0,
                       margin:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,
@@ -179,13 +183,13 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
                   child: Container(
                     width: double.infinity,
                     height: 50.0,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF1F4F8),
-                      boxShadow: const [
+                      color: Color(0xFFF1F4F8),
+                      boxShadow: [
                         BoxShadow(
                           blurRadius: 3.0,
                           color: Color(0x33000000),
@@ -200,7 +204,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                     child: FlutterFlowDropDown<String>(
                       controller: _model.dropDownValueController2 ??=
                           FormFieldController<String>(null),
-                      options: const [
+                      options: [
                         ' Find a quiet place where you can sit comfortably.\nTake a deep breath in for 4 seconds and exhale for 6 seconds.\nIdentify the following:\n\n5 things you can see (e.g., a chair, a clock, a window)\n4 things you can touch (e.g., your clothes, the table)\n3 things you can hear (e.g., birds chirping, a fan)\n2 things you can smell (e.g., coffee, fresh air)\n1 thing you can taste (e.g., gum, water)\n\nKeep breathing slowly and focus on the present moment.'
                       ],
                       onChanged: (val) =>
@@ -224,7 +228,7 @@ class _BlogDetailsWidgetState extends State<BlogDetailsWidget> {
                       borderWidth: 0.0,
                       borderRadius: 8.0,
                       margin:
-                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       hidesUnderline: true,
                       isOverButton: false,
                       isSearchable: false,

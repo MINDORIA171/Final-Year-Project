@@ -1,7 +1,11 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'list13_property_listview_model.dart';
 export 'list13_property_listview_model.dart';
 
@@ -58,13 +62,13 @@ class _List13PropertyListviewWidgetState
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 60.0,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    boxShadow: const [
+                    boxShadow: [
                       BoxShadow(
                         blurRadius: 3.0,
                         color: Color(0x33000000),
@@ -76,25 +80,25 @@ class _List13PropertyListviewWidgetState
                     ],
                     borderRadius: BorderRadius.circular(40.0),
                     border: Border.all(
-                      color: const Color(0xFFE5E7EB),
+                      color: Color(0xFFE5E7EB),
                     ),
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 12.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 12.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        const Icon(
+                        Icon(
                           Icons.search_rounded,
                           color: Color(0xFF606A85),
                           size: 24.0,
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 4.0, 0.0, 0.0, 0.0),
-                            child: SizedBox(
+                            child: Container(
                               width: 200.0,
                               child: TextFormField(
                                 controller: _model.textController,
@@ -107,7 +111,7 @@ class _List13PropertyListviewWidgetState
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF606A85),
+                                        color: Color(0xFF606A85),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -116,7 +120,7 @@ class _List13PropertyListviewWidgetState
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF606A85),
+                                        color: Color(0xFF606A85),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -132,12 +136,12 @@ class _List13PropertyListviewWidgetState
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Plus Jakarta Sans',
-                                      color: const Color(0xFF15161E),
+                                      color: Color(0xFF15161E),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
-                                cursorColor: const Color(0xFF6F61EF),
+                                cursorColor: Color(0xFF6F61EF),
                                 validator: _model.textControllerValidator
                                     .asValidator(context),
                               ),
@@ -145,12 +149,12 @@ class _List13PropertyListviewWidgetState
                           ),
                         ),
                         FlutterFlowIconButton(
-                          borderColor: const Color(0xFFE5E7EB),
+                          borderColor: Color(0xFFE5E7EB),
                           borderRadius: 20.0,
                           borderWidth: 1.0,
                           buttonSize: 40.0,
                           fillColor: Colors.white,
-                          icon: const Icon(
+                          icon: Icon(
                             Icons.tune_rounded,
                             color: Color(0xFF15161E),
                             size: 24.0,
@@ -168,22 +172,22 @@ class _List13PropertyListviewWidgetState
                 child: Column(
                   children: [
                     Align(
-                      alignment: const Alignment(0.0, 0),
+                      alignment: Alignment(0.0, 0),
                       child: TabBar(
-                        labelColor: const Color(0xFF15161E),
-                        unselectedLabelColor: const Color(0xFF606A85),
+                        labelColor: Color(0xFF15161E),
+                        unselectedLabelColor: Color(0xFF606A85),
                         labelStyle:
                             FlutterFlowTheme.of(context).labelSmall.override(
                                   fontFamily: 'Outfit',
-                                  color: const Color(0xFF606A85),
+                                  color: Color(0xFF606A85),
                                   fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
-                        unselectedLabelStyle: const TextStyle(),
-                        indicatorColor: const Color(0xFF6F61EF),
-                        padding: const EdgeInsets.all(4.0),
-                        tabs: const [
+                        unselectedLabelStyle: TextStyle(),
+                        indicatorColor: Color(0xFF6F61EF),
+                        padding: EdgeInsets.all(4.0),
+                        tabs: [
                           Tab(
                             text: 'Homes',
                             icon: Icon(
@@ -224,11 +228,11 @@ class _List13PropertyListviewWidgetState
                                   children: [
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -236,7 +240,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -251,7 +255,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -269,7 +273,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -278,7 +282,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -289,7 +293,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -302,7 +306,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -320,7 +324,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -331,7 +335,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -342,7 +346,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -351,7 +355,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -365,11 +369,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -377,7 +381,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -392,7 +396,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -410,7 +414,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -419,7 +423,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -430,7 +434,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -443,7 +447,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -461,7 +465,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -472,7 +476,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -483,7 +487,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -492,7 +496,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -506,11 +510,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -518,7 +522,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -533,7 +537,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -551,7 +555,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -560,7 +564,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -571,7 +575,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -584,7 +588,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -602,7 +606,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -613,7 +617,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -624,7 +628,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -633,7 +637,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -647,11 +651,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -659,7 +663,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -674,7 +678,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -692,7 +696,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -701,7 +705,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -712,7 +716,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -725,7 +729,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -743,7 +747,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -754,7 +758,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -765,7 +769,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -774,7 +778,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -788,11 +792,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -800,7 +804,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -815,7 +819,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -833,7 +837,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -842,7 +846,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -853,7 +857,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -866,7 +870,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -884,7 +888,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -895,7 +899,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -906,7 +910,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -915,7 +919,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -943,11 +947,11 @@ class _List13PropertyListviewWidgetState
                                   children: [
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -955,7 +959,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -970,7 +974,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -988,7 +992,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -997,7 +1001,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1008,7 +1012,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -1021,7 +1025,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1039,7 +1043,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1050,7 +1054,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -1061,7 +1065,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1070,7 +1074,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -1084,11 +1088,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1096,7 +1100,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -1111,7 +1115,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1129,7 +1133,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1138,7 +1142,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1149,7 +1153,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -1162,7 +1166,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1180,7 +1184,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1191,7 +1195,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -1202,7 +1206,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1211,7 +1215,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -1239,11 +1243,11 @@ class _List13PropertyListviewWidgetState
                                   children: [
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1251,7 +1255,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -1266,7 +1270,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1284,7 +1288,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1293,7 +1297,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1304,7 +1308,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -1317,7 +1321,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1335,7 +1339,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1346,7 +1350,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -1357,7 +1361,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1366,7 +1370,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
@@ -1380,11 +1384,11 @@ class _List13PropertyListviewWidgetState
                                     ),
                                     Container(
                                       width: double.infinity,
-                                      decoration: const BoxDecoration(
+                                      decoration: BoxDecoration(
                                         color: Colors.white,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -1392,7 +1396,7 @@ class _List13PropertyListviewWidgetState
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 8.0, 16.0, 12.0),
                                               child: ClipRRect(
@@ -1407,7 +1411,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1425,7 +1429,7 @@ class _List13PropertyListviewWidgetState
                                                           fontFamily:
                                                               'Plus Jakarta Sans',
                                                           color:
-                                                              const Color(0xFF15161E),
+                                                              Color(0xFF15161E),
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1434,7 +1438,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1445,7 +1449,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF15161E),
                                                             fontSize: 22.0,
                                                             letterSpacing: 0.0,
@@ -1458,7 +1462,7 @@ class _List13PropertyListviewWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 4.0),
                                               child: Row(
@@ -1476,7 +1480,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1487,7 +1491,7 @@ class _List13PropertyListviewWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 4.0, 0.0),
                                                     child: Text(
@@ -1498,7 +1502,7 @@ class _List13PropertyListviewWidgetState
                                                           .override(
                                                             fontFamily:
                                                                 'Outfit',
-                                                            color: const Color(
+                                                            color: Color(
                                                                 0xFF606A85),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -1507,7 +1511,7 @@ class _List13PropertyListviewWidgetState
                                                           ),
                                                     ),
                                                   ),
-                                                  const Icon(
+                                                  Icon(
                                                     Icons.star_rounded,
                                                     color: Color(0xFF606A85),
                                                     size: 24.0,
