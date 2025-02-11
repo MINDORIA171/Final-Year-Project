@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "935924745280",
+    "project_id": "mindoria-31",
+    "storage_bucket": "mindoria-31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935924745280:android:6c54071d976c06b3a24ba5",
+        "android_client_info": {
+          "package_name": "com.fyp.mindoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935924745280-0f2963jtjdc8uup00p4r1epk7ovkuu3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fyp.mindoria",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "935924745280-f14u7hghilaahr2dha1e8lbatvo3nrr6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz7byhqU0MX17iw4gsY5kaX9NgBJYcTjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935924745280-f14u7hghilaahr2dha1e8lbatvo3nrr6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "935924745280-eideihs2b2ntehbucu8rt90bplrngucd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fyp.mindoria"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
